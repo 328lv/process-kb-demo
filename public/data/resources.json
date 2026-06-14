@@ -1,0 +1,821 @@
+[
+  {
+    "id": "RES-EQ-001",
+    "type": "equipment",
+    "code": "EQ-001",
+    "name": "YK3150E 数控滚齿机",
+    "spec": "模数 1-8",
+    "status": "可用",
+    "validRange": "m1-m8"
+  },
+  {
+    "id": "RES-EQ-002",
+    "type": "equipment",
+    "code": "EQ-002",
+    "name": "YKS3132 数控滚齿机",
+    "spec": "模数 2-9",
+    "status": "可用",
+    "validRange": "m2-m9"
+  },
+  {
+    "id": "RES-EQ-003",
+    "type": "equipment",
+    "code": "EQ-003",
+    "name": "YK3180 数控滚齿机",
+    "spec": "模数 3-10",
+    "status": "点检",
+    "validRange": "m3-m10"
+  },
+  {
+    "id": "RES-EQ-004",
+    "type": "equipment",
+    "code": "EQ-004",
+    "name": "Y31125 数控滚齿机",
+    "spec": "模数 4-11",
+    "status": "可用",
+    "validRange": "m4-m11"
+  },
+  {
+    "id": "RES-EQ-005",
+    "type": "equipment",
+    "code": "EQ-005",
+    "name": "YK3132C 数控滚齿机",
+    "spec": "模数 5-12",
+    "status": "可用",
+    "validRange": "m5-m12"
+  },
+  {
+    "id": "RES-EQ-006",
+    "type": "equipment",
+    "code": "EQ-006",
+    "name": "YK3160 数控滚齿机",
+    "spec": "模数 6-13",
+    "status": "可用",
+    "validRange": "m6-m13"
+  },
+  {
+    "id": "RES-TL-001",
+    "type": "tool",
+    "code": "TL-001",
+    "name": "TiAlN涂层滚刀",
+    "spec": "1头 / TiAlN涂层",
+    "status": "可用",
+    "validRange": "m1-m6"
+  },
+  {
+    "id": "RES-TL-002",
+    "type": "tool",
+    "code": "TL-002",
+    "name": "高速钢滚刀",
+    "spec": "2头 / AlCrN涂层",
+    "status": "可用",
+    "validRange": "m2-m7"
+  },
+  {
+    "id": "RES-TL-003",
+    "type": "tool",
+    "code": "TL-003",
+    "name": "硬质合金滚刀",
+    "spec": "3头 / TiAlN涂层",
+    "status": "可用",
+    "validRange": "m3-m8"
+  },
+  {
+    "id": "RES-TL-004",
+    "type": "tool",
+    "code": "TL-004",
+    "name": "重切滚刀",
+    "spec": "4头 / AlCrN涂层",
+    "status": "可用",
+    "validRange": "m4-m9"
+  },
+  {
+    "id": "RES-TL-005",
+    "type": "tool",
+    "code": "TL-005",
+    "name": "修形滚刀",
+    "spec": "5头 / TiAlN涂层",
+    "status": "可用",
+    "validRange": "m5-m10"
+  },
+  {
+    "id": "RES-FX-001",
+    "type": "fixture",
+    "code": "FX-001",
+    "name": "滚齿夹具-001",
+    "spec": "适用直径 60-120mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-002",
+    "type": "fixture",
+    "code": "FX-002",
+    "name": "滚齿夹具-002",
+    "spec": "适用直径 62-122mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-003",
+    "type": "fixture",
+    "code": "FX-003",
+    "name": "滚齿夹具-003",
+    "spec": "适用直径 64-124mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-004",
+    "type": "fixture",
+    "code": "FX-004",
+    "name": "滚齿夹具-004",
+    "spec": "适用直径 66-126mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-005",
+    "type": "fixture",
+    "code": "FX-005",
+    "name": "滚齿夹具-005",
+    "spec": "适用直径 68-128mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-006",
+    "type": "fixture",
+    "code": "FX-006",
+    "name": "滚齿夹具-006",
+    "spec": "适用直径 70-130mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-007",
+    "type": "fixture",
+    "code": "FX-007",
+    "name": "滚齿夹具-007",
+    "spec": "适用直径 72-132mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-008",
+    "type": "fixture",
+    "code": "FX-008",
+    "name": "滚齿夹具-008",
+    "spec": "适用直径 74-134mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-009",
+    "type": "fixture",
+    "code": "FX-009",
+    "name": "滚齿夹具-009",
+    "spec": "适用直径 76-136mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-010",
+    "type": "fixture",
+    "code": "FX-010",
+    "name": "滚齿夹具-010",
+    "spec": "适用直径 78-138mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-011",
+    "type": "fixture",
+    "code": "FX-011",
+    "name": "滚齿夹具-011",
+    "spec": "适用直径 80-140mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-012",
+    "type": "fixture",
+    "code": "FX-012",
+    "name": "滚齿夹具-012",
+    "spec": "适用直径 82-142mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-013",
+    "type": "fixture",
+    "code": "FX-013",
+    "name": "滚齿夹具-013",
+    "spec": "适用直径 84-144mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-014",
+    "type": "fixture",
+    "code": "FX-014",
+    "name": "滚齿夹具-014",
+    "spec": "适用直径 86-146mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-015",
+    "type": "fixture",
+    "code": "FX-015",
+    "name": "滚齿夹具-015",
+    "spec": "适用直径 88-148mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-016",
+    "type": "fixture",
+    "code": "FX-016",
+    "name": "滚齿夹具-016",
+    "spec": "适用直径 90-150mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-017",
+    "type": "fixture",
+    "code": "FX-017",
+    "name": "滚齿夹具-017",
+    "spec": "适用直径 92-152mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-018",
+    "type": "fixture",
+    "code": "FX-018",
+    "name": "滚齿夹具-018",
+    "spec": "适用直径 94-154mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-019",
+    "type": "fixture",
+    "code": "FX-019",
+    "name": "滚齿夹具-019",
+    "spec": "适用直径 96-156mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-020",
+    "type": "fixture",
+    "code": "FX-020",
+    "name": "滚齿夹具-020",
+    "spec": "适用直径 98-158mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-021",
+    "type": "fixture",
+    "code": "FX-021",
+    "name": "滚齿夹具-021",
+    "spec": "适用直径 100-160mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-022",
+    "type": "fixture",
+    "code": "FX-022",
+    "name": "滚齿夹具-022",
+    "spec": "适用直径 102-162mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-023",
+    "type": "fixture",
+    "code": "FX-023",
+    "name": "滚齿夹具-023",
+    "spec": "适用直径 104-164mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-024",
+    "type": "fixture",
+    "code": "FX-024",
+    "name": "滚齿夹具-024",
+    "spec": "适用直径 106-166mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-025",
+    "type": "fixture",
+    "code": "FX-025",
+    "name": "滚齿夹具-025",
+    "spec": "适用直径 108-168mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-026",
+    "type": "fixture",
+    "code": "FX-026",
+    "name": "滚齿夹具-026",
+    "spec": "适用直径 110-170mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-027",
+    "type": "fixture",
+    "code": "FX-027",
+    "name": "滚齿夹具-027",
+    "spec": "适用直径 112-172mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-028",
+    "type": "fixture",
+    "code": "FX-028",
+    "name": "滚齿夹具-028",
+    "spec": "适用直径 114-174mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-029",
+    "type": "fixture",
+    "code": "FX-029",
+    "name": "滚齿夹具-029",
+    "spec": "适用直径 116-176mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-030",
+    "type": "fixture",
+    "code": "FX-030",
+    "name": "滚齿夹具-030",
+    "spec": "适用直径 118-178mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-031",
+    "type": "fixture",
+    "code": "FX-031",
+    "name": "滚齿夹具-031",
+    "spec": "适用直径 120-180mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-032",
+    "type": "fixture",
+    "code": "FX-032",
+    "name": "滚齿夹具-032",
+    "spec": "适用直径 122-182mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-033",
+    "type": "fixture",
+    "code": "FX-033",
+    "name": "滚齿夹具-033",
+    "spec": "适用直径 124-184mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-034",
+    "type": "fixture",
+    "code": "FX-034",
+    "name": "滚齿夹具-034",
+    "spec": "适用直径 126-186mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-035",
+    "type": "fixture",
+    "code": "FX-035",
+    "name": "滚齿夹具-035",
+    "spec": "适用直径 128-188mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-036",
+    "type": "fixture",
+    "code": "FX-036",
+    "name": "滚齿夹具-036",
+    "spec": "适用直径 130-190mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-037",
+    "type": "fixture",
+    "code": "FX-037",
+    "name": "滚齿夹具-037",
+    "spec": "适用直径 132-192mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-038",
+    "type": "fixture",
+    "code": "FX-038",
+    "name": "滚齿夹具-038",
+    "spec": "适用直径 134-194mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-039",
+    "type": "fixture",
+    "code": "FX-039",
+    "name": "滚齿夹具-039",
+    "spec": "适用直径 136-196mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-040",
+    "type": "fixture",
+    "code": "FX-040",
+    "name": "滚齿夹具-040",
+    "spec": "适用直径 138-198mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-041",
+    "type": "fixture",
+    "code": "FX-041",
+    "name": "滚齿夹具-041",
+    "spec": "适用直径 140-200mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-042",
+    "type": "fixture",
+    "code": "FX-042",
+    "name": "滚齿夹具-042",
+    "spec": "适用直径 142-202mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-043",
+    "type": "fixture",
+    "code": "FX-043",
+    "name": "滚齿夹具-043",
+    "spec": "适用直径 144-204mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-044",
+    "type": "fixture",
+    "code": "FX-044",
+    "name": "滚齿夹具-044",
+    "spec": "适用直径 146-206mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-045",
+    "type": "fixture",
+    "code": "FX-045",
+    "name": "滚齿夹具-045",
+    "spec": "适用直径 148-208mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-046",
+    "type": "fixture",
+    "code": "FX-046",
+    "name": "滚齿夹具-046",
+    "spec": "适用直径 150-210mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-047",
+    "type": "fixture",
+    "code": "FX-047",
+    "name": "滚齿夹具-047",
+    "spec": "适用直径 152-212mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-048",
+    "type": "fixture",
+    "code": "FX-048",
+    "name": "滚齿夹具-048",
+    "spec": "适用直径 154-214mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-049",
+    "type": "fixture",
+    "code": "FX-049",
+    "name": "滚齿夹具-049",
+    "spec": "适用直径 156-216mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-050",
+    "type": "fixture",
+    "code": "FX-050",
+    "name": "滚齿夹具-050",
+    "spec": "适用直径 158-218mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-051",
+    "type": "fixture",
+    "code": "FX-051",
+    "name": "滚齿夹具-051",
+    "spec": "适用直径 160-220mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-052",
+    "type": "fixture",
+    "code": "FX-052",
+    "name": "滚齿夹具-052",
+    "spec": "适用直径 162-222mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-053",
+    "type": "fixture",
+    "code": "FX-053",
+    "name": "滚齿夹具-053",
+    "spec": "适用直径 164-224mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-054",
+    "type": "fixture",
+    "code": "FX-054",
+    "name": "滚齿夹具-054",
+    "spec": "适用直径 166-226mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-055",
+    "type": "fixture",
+    "code": "FX-055",
+    "name": "滚齿夹具-055",
+    "spec": "适用直径 168-228mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-056",
+    "type": "fixture",
+    "code": "FX-056",
+    "name": "滚齿夹具-056",
+    "spec": "适用直径 170-230mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-057",
+    "type": "fixture",
+    "code": "FX-057",
+    "name": "滚齿夹具-057",
+    "spec": "适用直径 172-232mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-058",
+    "type": "fixture",
+    "code": "FX-058",
+    "name": "滚齿夹具-058",
+    "spec": "适用直径 174-234mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-059",
+    "type": "fixture",
+    "code": "FX-059",
+    "name": "滚齿夹具-059",
+    "spec": "适用直径 176-236mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-060",
+    "type": "fixture",
+    "code": "FX-060",
+    "name": "滚齿夹具-060",
+    "spec": "适用直径 178-238mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-061",
+    "type": "fixture",
+    "code": "FX-061",
+    "name": "滚齿夹具-061",
+    "spec": "适用直径 180-240mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-062",
+    "type": "fixture",
+    "code": "FX-062",
+    "name": "滚齿夹具-062",
+    "spec": "适用直径 182-242mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-063",
+    "type": "fixture",
+    "code": "FX-063",
+    "name": "滚齿夹具-063",
+    "spec": "适用直径 184-244mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-064",
+    "type": "fixture",
+    "code": "FX-064",
+    "name": "滚齿夹具-064",
+    "spec": "适用直径 186-246mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-065",
+    "type": "fixture",
+    "code": "FX-065",
+    "name": "滚齿夹具-065",
+    "spec": "适用直径 188-248mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-066",
+    "type": "fixture",
+    "code": "FX-066",
+    "name": "滚齿夹具-066",
+    "spec": "适用直径 190-250mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-067",
+    "type": "fixture",
+    "code": "FX-067",
+    "name": "滚齿夹具-067",
+    "spec": "适用直径 192-252mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-068",
+    "type": "fixture",
+    "code": "FX-068",
+    "name": "滚齿夹具-068",
+    "spec": "适用直径 194-254mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-069",
+    "type": "fixture",
+    "code": "FX-069",
+    "name": "滚齿夹具-069",
+    "spec": "适用直径 196-256mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-070",
+    "type": "fixture",
+    "code": "FX-070",
+    "name": "滚齿夹具-070",
+    "spec": "适用直径 198-258mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-071",
+    "type": "fixture",
+    "code": "FX-071",
+    "name": "滚齿夹具-071",
+    "spec": "适用直径 200-260mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-072",
+    "type": "fixture",
+    "code": "FX-072",
+    "name": "滚齿夹具-072",
+    "spec": "适用直径 202-262mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-073",
+    "type": "fixture",
+    "code": "FX-073",
+    "name": "滚齿夹具-073",
+    "spec": "适用直径 204-264mm",
+    "status": "维护",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-074",
+    "type": "fixture",
+    "code": "FX-074",
+    "name": "滚齿夹具-074",
+    "spec": "适用直径 206-266mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  },
+  {
+    "id": "RES-FX-075",
+    "type": "fixture",
+    "code": "FX-075",
+    "name": "滚齿夹具-075",
+    "spec": "适用直径 208-268mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 40Cr"
+  },
+  {
+    "id": "RES-FX-076",
+    "type": "fixture",
+    "code": "FX-076",
+    "name": "滚齿夹具-076",
+    "spec": "适用直径 210-270mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 45钢"
+  },
+  {
+    "id": "RES-FX-077",
+    "type": "fixture",
+    "code": "FX-077",
+    "name": "滚齿夹具-077",
+    "spec": "适用直径 212-272mm",
+    "status": "可用",
+    "validRange": "外齿轮 / QT500-7"
+  },
+  {
+    "id": "RES-FX-078",
+    "type": "fixture",
+    "code": "FX-078",
+    "name": "滚齿夹具-078",
+    "spec": "适用直径 214-274mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 18CrNiMo7-6"
+  },
+  {
+    "id": "RES-FX-079",
+    "type": "fixture",
+    "code": "FX-079",
+    "name": "滚齿夹具-079",
+    "spec": "适用直径 216-276mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 20CrMnTi"
+  },
+  {
+    "id": "RES-FX-080",
+    "type": "fixture",
+    "code": "FX-080",
+    "name": "滚齿夹具-080",
+    "spec": "适用直径 218-278mm",
+    "status": "可用",
+    "validRange": "外齿轮 / 42CrMo"
+  }
+]

@@ -1,0 +1,5502 @@
+[
+  {
+    "id": "RULE-0001",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      80,
+      160
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.2,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0002",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      81,
+      161
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.3,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0003",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      82,
+      162
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.4,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0004",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      83,
+      163
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.5,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0005",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      84,
+      164
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.6,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0006",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      85,
+      165
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.2,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0007",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      86,
+      166
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.3,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0008",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      87,
+      167
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.4,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0009",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      88,
+      168
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.5,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0010",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      89,
+      169
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.6,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0011",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      90,
+      170
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.2,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0012",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      91,
+      171
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.3,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0013",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      92,
+      172
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.4,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0014",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      93,
+      173
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.5,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0015",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      94,
+      174
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.6,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0016",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      95,
+      175
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.2,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0017",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      96,
+      176
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.3,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0018",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      97,
+      177
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.4,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0019",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      98,
+      178
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.5,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0020",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      99,
+      179
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.6,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0021",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      100,
+      180
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.2,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0022",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      101,
+      181
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.3,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0023",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      102,
+      182
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.4,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0024",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      103,
+      183
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.5,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0025",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      104,
+      184
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.6,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0026",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      105,
+      185
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.2,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0027",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      106,
+      186
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.3,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0028",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      107,
+      187
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.4,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0029",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      108,
+      188
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.5,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0030",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      109,
+      189
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.6,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0031",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      110,
+      190
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.2,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0032",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      111,
+      191
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.3,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0033",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      112,
+      192
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.4,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0034",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      113,
+      193
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.5,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0035",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      114,
+      194
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.6,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0036",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      115,
+      195
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.2,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0037",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      116,
+      196
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.3,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0038",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      117,
+      197
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.4,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0039",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      118,
+      198
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.5,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0040",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      119,
+      199
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.6,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0041",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      120,
+      200
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.2,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0042",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      121,
+      201
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.3,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0043",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      122,
+      202
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.4,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0044",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      123,
+      203
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.5,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0045",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      124,
+      204
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.6,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0046",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      125,
+      205
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.2,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0047",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      126,
+      206
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.3,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0048",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      127,
+      207
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.4,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0049",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      128,
+      208
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.5,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0050",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      129,
+      209
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.6,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0051",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      130,
+      210
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.2,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0052",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      131,
+      211
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.3,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0053",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      132,
+      212
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.4,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0054",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      133,
+      213
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.5,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0055",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      134,
+      214
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.6,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0056",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      135,
+      215
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.2,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0057",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      136,
+      216
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.3,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0058",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      137,
+      217
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.4,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0059",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      138,
+      218
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.5,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0060",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      139,
+      219
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.6,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0061",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      140,
+      220
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.2,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0062",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      141,
+      221
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.3,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0063",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      142,
+      222
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.4,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0064",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      143,
+      223
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.5,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0065",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      144,
+      224
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.6,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0066",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      145,
+      225
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.2,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0067",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      146,
+      226
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.3,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0068",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      147,
+      227
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.4,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0069",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      148,
+      228
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.5,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0070",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      149,
+      229
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.6,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0071",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      150,
+      230
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.2,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0072",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      151,
+      231
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.3,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0073",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      152,
+      232
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.4,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0074",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      153,
+      233
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.5,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0075",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      154,
+      234
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.6,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0076",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      155,
+      235
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.2,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0077",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      156,
+      236
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.3,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0078",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      157,
+      237
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.4,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0079",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      158,
+      238
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.5,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0080",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      159,
+      239
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.6,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0081",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      160,
+      240
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.2,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0082",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      161,
+      241
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.3,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0083",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      162,
+      242
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.4,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0084",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      163,
+      243
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.5,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0085",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      164,
+      244
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.6,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0086",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      165,
+      245
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.2,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0087",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      166,
+      246
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.3,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0088",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      167,
+      247
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.4,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0089",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      168,
+      248
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.5,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0090",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      169,
+      249
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.6,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0091",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      170,
+      250
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.2,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0092",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      171,
+      251
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.3,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0093",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      172,
+      252
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.4,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0094",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      173,
+      253
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.5,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0095",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      174,
+      254
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.6,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0096",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      175,
+      255
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.2,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0097",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      176,
+      256
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.3,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0098",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      177,
+      257
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.4,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0099",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      178,
+      258
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.5,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0100",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      179,
+      259
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.6,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0101",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      180,
+      260
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.2,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0102",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      181,
+      261
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.3,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0103",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      182,
+      262
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.4,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0104",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      183,
+      263
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.5,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0105",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      184,
+      264
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.6,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0106",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      185,
+      265
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.2,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0107",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      186,
+      266
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.3,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0108",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      187,
+      267
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.4,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0109",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      188,
+      268
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.5,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0110",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      189,
+      269
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.6,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0111",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      190,
+      270
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.2,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0112",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      191,
+      271
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.3,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0113",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      192,
+      272
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.4,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0114",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      193,
+      273
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.5,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0115",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      194,
+      274
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.6,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0116",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      195,
+      275
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.2,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0117",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      196,
+      276
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.3,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0118",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      197,
+      277
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.4,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0119",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      198,
+      278
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.5,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0120",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      199,
+      279
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.6,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0121",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      80,
+      280
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.2,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0122",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      81,
+      281
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.3,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0123",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      82,
+      282
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.4,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0124",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      83,
+      283
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.5,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0125",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      84,
+      284
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.6,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0126",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      85,
+      285
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.2,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0127",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      86,
+      286
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.3,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0128",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      87,
+      287
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.4,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0129",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      88,
+      288
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.5,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0130",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      89,
+      289
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.6,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0131",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      90,
+      290
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.2,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0132",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      91,
+      291
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.3,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0133",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      92,
+      292
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.4,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0134",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      93,
+      293
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.5,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0135",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      94,
+      294
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.6,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0136",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      95,
+      295
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.2,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0137",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      96,
+      296
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.3,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0138",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      97,
+      297
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.4,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0139",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      98,
+      298
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.5,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0140",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      99,
+      299
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.6,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0141",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      100,
+      300
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.2,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0142",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      101,
+      301
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.3,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0143",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      102,
+      302
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.4,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0144",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      103,
+      303
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.5,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0145",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      104,
+      304
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.6,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0146",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      105,
+      305
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.2,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0147",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      106,
+      306
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.3,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0148",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      107,
+      307
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.4,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0149",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      108,
+      308
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.5,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0150",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      109,
+      309
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.6,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0151",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      110,
+      310
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.2,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0152",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      111,
+      311
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.3,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0153",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      112,
+      312
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.4,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0154",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      113,
+      313
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.5,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0155",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      114,
+      314
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.6,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0156",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      115,
+      315
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.2,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0157",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      116,
+      316
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.3,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0158",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      117,
+      317
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.4,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0159",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      118,
+      318
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.5,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0160",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      119,
+      319
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.6,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0161",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      120,
+      320
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.2,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0162",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      121,
+      321
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.3,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0163",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      122,
+      322
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.4,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0164",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      123,
+      323
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.5,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0165",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      124,
+      324
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.6,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0166",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      125,
+      325
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.2,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0167",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      126,
+      326
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.3,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0168",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      127,
+      327
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.4,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0169",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      128,
+      328
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.5,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0170",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      129,
+      329
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.6,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0171",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      130,
+      330
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.2,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0172",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      131,
+      331
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.3,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0173",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      132,
+      332
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.4,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0174",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      133,
+      333
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.5,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0175",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      134,
+      334
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.6,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0176",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      135,
+      335
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.2,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0177",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      136,
+      336
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.3,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0178",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      137,
+      337
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.4,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0179",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      138,
+      338
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.5,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0180",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      139,
+      339
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.6,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0181",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      140,
+      340
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.2,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0182",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      141,
+      341
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.3,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0183",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      142,
+      342
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.4,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0184",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      143,
+      343
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.5,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0185",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      144,
+      344
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.6,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0186",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      145,
+      345
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.2,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0187",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      146,
+      346
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.3,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0188",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      147,
+      347
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.4,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0189",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      148,
+      348
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.5,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0190",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      149,
+      349
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.6,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0191",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      150,
+      350
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.2,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0192",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      151,
+      351
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.3,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0193",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      152,
+      352
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.4,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0194",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      153,
+      353
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.5,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0195",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      154,
+      354
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.6,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0196",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      155,
+      355
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.2,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0197",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      156,
+      356
+    ],
+    "feedRange": [
+      0.8,
+      1.38
+    ],
+    "depthRange": [
+      0.3,
+      1.6
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0198",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      157,
+      357
+    ],
+    "feedRange": [
+      0.9,
+      1.5
+    ],
+    "depthRange": [
+      0.4,
+      1.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0199",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      158,
+      358
+    ],
+    "feedRange": [
+      0.4,
+      1.62
+    ],
+    "depthRange": [
+      0.5,
+      2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0200",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      159,
+      359
+    ],
+    "feedRange": [
+      0.5,
+      1.74
+    ],
+    "depthRange": [
+      0.6,
+      2.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0201",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      160,
+      360
+    ],
+    "feedRange": [
+      0.6,
+      0.9
+    ],
+    "depthRange": [
+      0.2,
+      0.8
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0202",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      161,
+      361
+    ],
+    "feedRange": [
+      0.7,
+      1.02
+    ],
+    "depthRange": [
+      0.3,
+      1
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0203",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      162,
+      362
+    ],
+    "feedRange": [
+      0.8,
+      1.14
+    ],
+    "depthRange": [
+      0.4,
+      1.2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0204",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      163,
+      363
+    ],
+    "feedRange": [
+      0.9,
+      1.26
+    ],
+    "depthRange": [
+      0.5,
+      1.4
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0205",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      164,
+      364
+    ],
+    "feedRange": [
+      0.4,
+      1.38
+    ],
+    "depthRange": [
+      0.6,
+      1.6
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0206",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      165,
+      365
+    ],
+    "feedRange": [
+      0.5,
+      1.5
+    ],
+    "depthRange": [
+      0.2,
+      1.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0207",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      166,
+      366
+    ],
+    "feedRange": [
+      0.6,
+      1.62
+    ],
+    "depthRange": [
+      0.3,
+      2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0208",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      167,
+      367
+    ],
+    "feedRange": [
+      0.7,
+      1.74
+    ],
+    "depthRange": [
+      0.4,
+      2.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0209",
+    "material": "QT500-7",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      168,
+      368
+    ],
+    "feedRange": [
+      0.8,
+      0.9
+    ],
+    "depthRange": [
+      0.5,
+      0.8
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0210",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      169,
+      369
+    ],
+    "feedRange": [
+      0.9,
+      1.02
+    ],
+    "depthRange": [
+      0.6,
+      1
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0211",
+    "material": "20CrMnTi",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      170,
+      370
+    ],
+    "feedRange": [
+      0.4,
+      1.14
+    ],
+    "depthRange": [
+      0.2,
+      1.2
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0212",
+    "material": "42CrMo",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      171,
+      371
+    ],
+    "feedRange": [
+      0.5,
+      1.26
+    ],
+    "depthRange": [
+      0.3,
+      1.4
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0213",
+    "material": "40Cr",
+    "moduleMin": 1,
+    "moduleMax": 8,
+    "accuracy": "6级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      172,
+      372
+    ],
+    "feedRange": [
+      0.6,
+      1.38
+    ],
+    "depthRange": [
+      0.4,
+      1.6
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0214",
+    "material": "45钢",
+    "moduleMin": 2,
+    "moduleMax": 9,
+    "accuracy": "7级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      173,
+      373
+    ],
+    "feedRange": [
+      0.7,
+      1.5
+    ],
+    "depthRange": [
+      0.5,
+      1.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0215",
+    "material": "QT500-7",
+    "moduleMin": 3,
+    "moduleMax": 10,
+    "accuracy": "8级",
+    "heatTreatment": "调质",
+    "equipmentType": "YK3132C",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      174,
+      374
+    ],
+    "feedRange": [
+      0.8,
+      1.62
+    ],
+    "depthRange": [
+      0.6,
+      2
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0216",
+    "material": "18CrNiMo7-6",
+    "moduleMin": 4,
+    "moduleMax": 11,
+    "accuracy": "9级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3160",
+    "toolType": "TiAlN涂层滚刀",
+    "rpmRange": [
+      175,
+      375
+    ],
+    "feedRange": [
+      0.9,
+      1.74
+    ],
+    "depthRange": [
+      0.2,
+      2.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0217",
+    "material": "20CrMnTi",
+    "moduleMin": 1,
+    "moduleMax": 4,
+    "accuracy": "6级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "YK3150E",
+    "toolType": "高速钢滚刀",
+    "rpmRange": [
+      176,
+      376
+    ],
+    "feedRange": [
+      0.4,
+      0.9
+    ],
+    "depthRange": [
+      0.3,
+      0.8
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0218",
+    "material": "42CrMo",
+    "moduleMin": 2,
+    "moduleMax": 5,
+    "accuracy": "7级",
+    "heatTreatment": "调质",
+    "equipmentType": "YKS3132",
+    "toolType": "硬质合金滚刀",
+    "rpmRange": [
+      177,
+      377
+    ],
+    "feedRange": [
+      0.5,
+      1.02
+    ],
+    "depthRange": [
+      0.4,
+      1
+    ],
+    "coolant": "高压冷却",
+    "risk": "中",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0219",
+    "material": "40Cr",
+    "moduleMin": 3,
+    "moduleMax": 6,
+    "accuracy": "8级",
+    "heatTreatment": "正火",
+    "equipmentType": "YK3180",
+    "toolType": "重切滚刀",
+    "rpmRange": [
+      178,
+      378
+    ],
+    "feedRange": [
+      0.6,
+      1.14
+    ],
+    "depthRange": [
+      0.5,
+      1.2
+    ],
+    "coolant": "定向冷却",
+    "risk": "高",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  },
+  {
+    "id": "RULE-0220",
+    "material": "45钢",
+    "moduleMin": 4,
+    "moduleMax": 7,
+    "accuracy": "9级",
+    "heatTreatment": "渗碳淬火",
+    "equipmentType": "Y31125",
+    "toolType": "修形滚刀",
+    "rpmRange": [
+      179,
+      379
+    ],
+    "feedRange": [
+      0.7,
+      1.26
+    ],
+    "depthRange": [
+      0.6,
+      1.4
+    ],
+    "coolant": "乳化液充分冷却",
+    "risk": "低",
+    "basis": "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  }
+]

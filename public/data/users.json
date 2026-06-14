@@ -1,0 +1,38 @@
+[
+  {
+    "id": "U-001",
+    "username": "admin",
+    "password": "123456",
+    "name": "系统管理员",
+    "role": "admin",
+    "roleName": "系统管理员",
+    "department": "信息化"
+  },
+  {
+    "id": "U-002",
+    "username": "process",
+    "password": "123456",
+    "name": "工艺管理员",
+    "role": "process",
+    "roleName": "工艺管理员",
+    "department": "工艺室"
+  },
+  {
+    "id": "U-003",
+    "username": "viewer",
+    "password": "123456",
+    "name": "普通查询用户",
+    "role": "viewer",
+    "roleName": "普通查询用户",
+    "department": "车间"
+  },
+  {
+    "id": "U-004",
+    "username": "api",
+    "password": "123456",
+    "name": "接口调用方",
+    "role": "api",
+    "roleName": "接口调用方",
+    "department": "数字孪生平台"
+  }
+]

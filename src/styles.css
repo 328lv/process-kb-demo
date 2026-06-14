@@ -1,0 +1,209 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f3f6fa;
+  color: #172033;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(420px, 1fr) minmax(420px, 0.85fr);
+  background: #eef3f8;
+}
+
+.login-hero {
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(16, 38, 61, 0.96), rgba(31, 78, 121, 0.92)),
+    linear-gradient(45deg, #10263d, #1f4e79);
+}
+
+.login-hero h1 {
+  margin: 0;
+  max-width: 680px;
+  font-size: 38px;
+  line-height: 1.25;
+}
+
+.login-hero p {
+  max-width: 680px;
+  color: #cfdae6;
+  line-height: 1.8;
+}
+
+.login-badges {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.login-badge {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.login-badge strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.login-card-wrap {
+  display: grid;
+  place-items: center;
+  padding: 42px;
+}
+
+.login-card {
+  width: min(460px, 100%);
+  border: 1px solid #dbe3ec;
+  box-shadow: 0 18px 42px rgba(23, 32, 51, 0.14);
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+  place-items: center;
+  border-radius: 8px;
+  background: #e6f0f7;
+  color: #1f4e79;
+  font-weight: 800;
+}
+
+.site-layout {
+  min-height: 100vh;
+}
+
+.site-sider {
+  background: #13263d !important;
+}
+
+.site-logo {
+  height: 64px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.site-header {
+  height: 64px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #dbe3ec;
+}
+
+.page-content {
+  padding: 22px;
+}
+
+.page-title {
+  margin-bottom: 18px;
+}
+
+.page-title h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.page-title p {
+  margin: 6px 0 0;
+  color: #5d6b7f;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.workbench-grid {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.85fr) minmax(520px, 1.15fr);
+  gap: 16px;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.muted {
+  color: #637287;
+}
+
+.ant-card {
+  border-radius: 8px;
+}
+
+.ant-table-wrapper .ant-table {
+  font-size: 13px;
+}
+
+@media (max-width: 1180px) {
+  .login-page,
+  .workbench-grid,
+  .content-grid,
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .login-badges {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .metric-grid,
+  .login-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .login-hero,
+  .login-card-wrap,
+  .page-content {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "AUD-0001",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "knowledge",
+    "targetId": "TGT-0001",
+    "result": "失败",
+    "createdAt": "2026-06-01 08:30"
+  },
+  {
+    "id": "AUD-0002",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "quality",
+    "targetId": "TGT-0002",
+    "result": "成功",
+    "createdAt": "2026-06-02 09:30"
+  },
+  {
+    "id": "AUD-0003",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "process",
+    "targetId": "TGT-0003",
+    "result": "成功",
+    "createdAt": "2026-06-03 10:30"
+  },
+  {
+    "id": "AUD-0004",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0004",
+    "result": "成功",
+    "createdAt": "2026-06-04 11:30"
+  },
+  {
+    "id": "AUD-0005",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "api",
+    "targetId": "TGT-0005",
+    "result": "成功",
+    "createdAt": "2026-06-05 12:30"
+  },
+  {
+    "id": "AUD-0006",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "knowledge",
+    "targetId": "TGT-0006",
+    "result": "成功",
+    "createdAt": "2026-06-06 13:30"
+  },
+  {
+    "id": "AUD-0007",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "quality",
+    "targetId": "TGT-0007",
+    "result": "成功",
+    "createdAt": "2026-06-07 14:30"
+  },
+  {
+    "id": "AUD-0008",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "process",
+    "targetId": "TGT-0008",
+    "result": "成功",
+    "createdAt": "2026-06-08 15:30"
+  },
+  {
+    "id": "AUD-0009",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "recommendation",
+    "targetId": "TGT-0009",
+    "result": "成功",
+    "createdAt": "2026-06-09 16:30"
+  },
+  {
+    "id": "AUD-0010",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "api",
+    "targetId": "TGT-0010",
+    "result": "成功",
+    "createdAt": "2026-06-10 17:30"
+  },
+  {
+    "id": "AUD-0011",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "knowledge",
+    "targetId": "TGT-0011",
+    "result": "成功",
+    "createdAt": "2026-06-11 08:30"
+  },
+  {
+    "id": "AUD-0012",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "quality",
+    "targetId": "TGT-0012",
+    "result": "成功",
+    "createdAt": "2026-06-12 09:30"
+  },
+  {
+    "id": "AUD-0013",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "process",
+    "targetId": "TGT-0013",
+    "result": "成功",
+    "createdAt": "2026-06-13 10:30"
+  },
+  {
+    "id": "AUD-0014",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0014",
+    "result": "失败",
+    "createdAt": "2026-06-14 11:30"
+  },
+  {
+    "id": "AUD-0015",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "api",
+    "targetId": "TGT-0015",
+    "result": "成功",
+    "createdAt": "2026-06-15 12:30"
+  },
+  {
+    "id": "AUD-0016",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0016",
+    "result": "成功",
+    "createdAt": "2026-06-16 13:30"
+  },
+  {
+    "id": "AUD-0017",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "quality",
+    "targetId": "TGT-0017",
+    "result": "成功",
+    "createdAt": "2026-06-17 14:30"
+  },
+  {
+    "id": "AUD-0018",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "process",
+    "targetId": "TGT-0018",
+    "result": "成功",
+    "createdAt": "2026-06-18 15:30"
+  },
+  {
+    "id": "AUD-0019",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "recommendation",
+    "targetId": "TGT-0019",
+    "result": "成功",
+    "createdAt": "2026-06-19 16:30"
+  },
+  {
+    "id": "AUD-0020",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "api",
+    "targetId": "TGT-0020",
+    "result": "成功",
+    "createdAt": "2026-06-20 17:30"
+  },
+  {
+    "id": "AUD-0021",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "knowledge",
+    "targetId": "TGT-0021",
+    "result": "成功",
+    "createdAt": "2026-06-21 08:30"
+  },
+  {
+    "id": "AUD-0022",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "quality",
+    "targetId": "TGT-0022",
+    "result": "成功",
+    "createdAt": "2026-06-22 09:30"
+  },
+  {
+    "id": "AUD-0023",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "process",
+    "targetId": "TGT-0023",
+    "result": "成功",
+    "createdAt": "2026-06-23 10:30"
+  },
+  {
+    "id": "AUD-0024",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "recommendation",
+    "targetId": "TGT-0024",
+    "result": "成功",
+    "createdAt": "2026-06-24 11:30"
+  },
+  {
+    "id": "AUD-0025",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "api",
+    "targetId": "TGT-0025",
+    "result": "成功",
+    "createdAt": "2026-06-25 12:30"
+  },
+  {
+    "id": "AUD-0026",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0026",
+    "result": "成功",
+    "createdAt": "2026-06-26 13:30"
+  },
+  {
+    "id": "AUD-0027",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "quality",
+    "targetId": "TGT-0027",
+    "result": "失败",
+    "createdAt": "2026-06-27 14:30"
+  },
+  {
+    "id": "AUD-0028",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "process",
+    "targetId": "TGT-0028",
+    "result": "成功",
+    "createdAt": "2026-06-01 15:30"
+  },
+  {
+    "id": "AUD-0029",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "recommendation",
+    "targetId": "TGT-0029",
+    "result": "成功",
+    "createdAt": "2026-06-02 16:30"
+  },
+  {
+    "id": "AUD-0030",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "api",
+    "targetId": "TGT-0030",
+    "result": "成功",
+    "createdAt": "2026-06-03 17:30"
+  },
+  {
+    "id": "AUD-0031",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "knowledge",
+    "targetId": "TGT-0031",
+    "result": "成功",
+    "createdAt": "2026-06-04 08:30"
+  },
+  {
+    "id": "AUD-0032",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "quality",
+    "targetId": "TGT-0032",
+    "result": "成功",
+    "createdAt": "2026-06-05 09:30"
+  },
+  {
+    "id": "AUD-0033",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "process",
+    "targetId": "TGT-0033",
+    "result": "成功",
+    "createdAt": "2026-06-06 10:30"
+  },
+  {
+    "id": "AUD-0034",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0034",
+    "result": "成功",
+    "createdAt": "2026-06-07 11:30"
+  },
+  {
+    "id": "AUD-0035",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "api",
+    "targetId": "TGT-0035",
+    "result": "成功",
+    "createdAt": "2026-06-08 12:30"
+  },
+  {
+    "id": "AUD-0036",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "knowledge",
+    "targetId": "TGT-0036",
+    "result": "成功",
+    "createdAt": "2026-06-09 13:30"
+  },
+  {
+    "id": "AUD-0037",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "quality",
+    "targetId": "TGT-0037",
+    "result": "成功",
+    "createdAt": "2026-06-10 14:30"
+  },
+  {
+    "id": "AUD-0038",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "process",
+    "targetId": "TGT-0038",
+    "result": "成功",
+    "createdAt": "2026-06-11 15:30"
+  },
+  {
+    "id": "AUD-0039",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "recommendation",
+    "targetId": "TGT-0039",
+    "result": "成功",
+    "createdAt": "2026-06-12 16:30"
+  },
+  {
+    "id": "AUD-0040",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "api",
+    "targetId": "TGT-0040",
+    "result": "失败",
+    "createdAt": "2026-06-13 17:30"
+  },
+  {
+    "id": "AUD-0041",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "knowledge",
+    "targetId": "TGT-0041",
+    "result": "成功",
+    "createdAt": "2026-06-14 08:30"
+  },
+  {
+    "id": "AUD-0042",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "quality",
+    "targetId": "TGT-0042",
+    "result": "成功",
+    "createdAt": "2026-06-15 09:30"
+  },
+  {
+    "id": "AUD-0043",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "process",
+    "targetId": "TGT-0043",
+    "result": "成功",
+    "createdAt": "2026-06-16 10:30"
+  },
+  {
+    "id": "AUD-0044",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0044",
+    "result": "成功",
+    "createdAt": "2026-06-17 11:30"
+  },
+  {
+    "id": "AUD-0045",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "api",
+    "targetId": "TGT-0045",
+    "result": "成功",
+    "createdAt": "2026-06-18 12:30"
+  },
+  {
+    "id": "AUD-0046",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0046",
+    "result": "成功",
+    "createdAt": "2026-06-19 13:30"
+  },
+  {
+    "id": "AUD-0047",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "quality",
+    "targetId": "TGT-0047",
+    "result": "成功",
+    "createdAt": "2026-06-20 14:30"
+  },
+  {
+    "id": "AUD-0048",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "process",
+    "targetId": "TGT-0048",
+    "result": "成功",
+    "createdAt": "2026-06-21 15:30"
+  },
+  {
+    "id": "AUD-0049",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "recommendation",
+    "targetId": "TGT-0049",
+    "result": "成功",
+    "createdAt": "2026-06-22 16:30"
+  },
+  {
+    "id": "AUD-0050",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "api",
+    "targetId": "TGT-0050",
+    "result": "成功",
+    "createdAt": "2026-06-23 17:30"
+  },
+  {
+    "id": "AUD-0051",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "knowledge",
+    "targetId": "TGT-0051",
+    "result": "成功",
+    "createdAt": "2026-06-24 08:30"
+  },
+  {
+    "id": "AUD-0052",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "quality",
+    "targetId": "TGT-0052",
+    "result": "成功",
+    "createdAt": "2026-06-25 09:30"
+  },
+  {
+    "id": "AUD-0053",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "process",
+    "targetId": "TGT-0053",
+    "result": "失败",
+    "createdAt": "2026-06-26 10:30"
+  },
+  {
+    "id": "AUD-0054",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "recommendation",
+    "targetId": "TGT-0054",
+    "result": "成功",
+    "createdAt": "2026-06-27 11:30"
+  },
+  {
+    "id": "AUD-0055",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "api",
+    "targetId": "TGT-0055",
+    "result": "成功",
+    "createdAt": "2026-06-01 12:30"
+  },
+  {
+    "id": "AUD-0056",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0056",
+    "result": "成功",
+    "createdAt": "2026-06-02 13:30"
+  },
+  {
+    "id": "AUD-0057",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "quality",
+    "targetId": "TGT-0057",
+    "result": "成功",
+    "createdAt": "2026-06-03 14:30"
+  },
+  {
+    "id": "AUD-0058",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "process",
+    "targetId": "TGT-0058",
+    "result": "成功",
+    "createdAt": "2026-06-04 15:30"
+  },
+  {
+    "id": "AUD-0059",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "recommendation",
+    "targetId": "TGT-0059",
+    "result": "成功",
+    "createdAt": "2026-06-05 16:30"
+  },
+  {
+    "id": "AUD-0060",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "api",
+    "targetId": "TGT-0060",
+    "result": "成功",
+    "createdAt": "2026-06-06 17:30"
+  },
+  {
+    "id": "AUD-0061",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "knowledge",
+    "targetId": "TGT-0061",
+    "result": "成功",
+    "createdAt": "2026-06-07 08:30"
+  },
+  {
+    "id": "AUD-0062",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "quality",
+    "targetId": "TGT-0062",
+    "result": "成功",
+    "createdAt": "2026-06-08 09:30"
+  },
+  {
+    "id": "AUD-0063",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "process",
+    "targetId": "TGT-0063",
+    "result": "成功",
+    "createdAt": "2026-06-09 10:30"
+  },
+  {
+    "id": "AUD-0064",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0064",
+    "result": "成功",
+    "createdAt": "2026-06-10 11:30"
+  },
+  {
+    "id": "AUD-0065",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "api",
+    "targetId": "TGT-0065",
+    "result": "成功",
+    "createdAt": "2026-06-11 12:30"
+  },
+  {
+    "id": "AUD-0066",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "knowledge",
+    "targetId": "TGT-0066",
+    "result": "失败",
+    "createdAt": "2026-06-12 13:30"
+  },
+  {
+    "id": "AUD-0067",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "quality",
+    "targetId": "TGT-0067",
+    "result": "成功",
+    "createdAt": "2026-06-13 14:30"
+  },
+  {
+    "id": "AUD-0068",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "process",
+    "targetId": "TGT-0068",
+    "result": "成功",
+    "createdAt": "2026-06-14 15:30"
+  },
+  {
+    "id": "AUD-0069",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "recommendation",
+    "targetId": "TGT-0069",
+    "result": "成功",
+    "createdAt": "2026-06-15 16:30"
+  },
+  {
+    "id": "AUD-0070",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "api",
+    "targetId": "TGT-0070",
+    "result": "成功",
+    "createdAt": "2026-06-16 17:30"
+  },
+  {
+    "id": "AUD-0071",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "knowledge",
+    "targetId": "TGT-0071",
+    "result": "成功",
+    "createdAt": "2026-06-17 08:30"
+  },
+  {
+    "id": "AUD-0072",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "quality",
+    "targetId": "TGT-0072",
+    "result": "成功",
+    "createdAt": "2026-06-18 09:30"
+  },
+  {
+    "id": "AUD-0073",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "process",
+    "targetId": "TGT-0073",
+    "result": "成功",
+    "createdAt": "2026-06-19 10:30"
+  },
+  {
+    "id": "AUD-0074",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0074",
+    "result": "成功",
+    "createdAt": "2026-06-20 11:30"
+  },
+  {
+    "id": "AUD-0075",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "api",
+    "targetId": "TGT-0075",
+    "result": "成功",
+    "createdAt": "2026-06-21 12:30"
+  },
+  {
+    "id": "AUD-0076",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0076",
+    "result": "成功",
+    "createdAt": "2026-06-22 13:30"
+  },
+  {
+    "id": "AUD-0077",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "quality",
+    "targetId": "TGT-0077",
+    "result": "成功",
+    "createdAt": "2026-06-23 14:30"
+  },
+  {
+    "id": "AUD-0078",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "process",
+    "targetId": "TGT-0078",
+    "result": "成功",
+    "createdAt": "2026-06-24 15:30"
+  },
+  {
+    "id": "AUD-0079",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "recommendation",
+    "targetId": "TGT-0079",
+    "result": "失败",
+    "createdAt": "2026-06-25 16:30"
+  },
+  {
+    "id": "AUD-0080",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "api",
+    "targetId": "TGT-0080",
+    "result": "成功",
+    "createdAt": "2026-06-26 17:30"
+  },
+  {
+    "id": "AUD-0081",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "knowledge",
+    "targetId": "TGT-0081",
+    "result": "成功",
+    "createdAt": "2026-06-27 08:30"
+  },
+  {
+    "id": "AUD-0082",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "quality",
+    "targetId": "TGT-0082",
+    "result": "成功",
+    "createdAt": "2026-06-01 09:30"
+  },
+  {
+    "id": "AUD-0083",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "process",
+    "targetId": "TGT-0083",
+    "result": "成功",
+    "createdAt": "2026-06-02 10:30"
+  },
+  {
+    "id": "AUD-0084",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "recommendation",
+    "targetId": "TGT-0084",
+    "result": "成功",
+    "createdAt": "2026-06-03 11:30"
+  },
+  {
+    "id": "AUD-0085",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "api",
+    "targetId": "TGT-0085",
+    "result": "成功",
+    "createdAt": "2026-06-04 12:30"
+  },
+  {
+    "id": "AUD-0086",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0086",
+    "result": "成功",
+    "createdAt": "2026-06-05 13:30"
+  },
+  {
+    "id": "AUD-0087",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "quality",
+    "targetId": "TGT-0087",
+    "result": "成功",
+    "createdAt": "2026-06-06 14:30"
+  },
+  {
+    "id": "AUD-0088",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "process",
+    "targetId": "TGT-0088",
+    "result": "成功",
+    "createdAt": "2026-06-07 15:30"
+  },
+  {
+    "id": "AUD-0089",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "recommendation",
+    "targetId": "TGT-0089",
+    "result": "成功",
+    "createdAt": "2026-06-08 16:30"
+  },
+  {
+    "id": "AUD-0090",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "api",
+    "targetId": "TGT-0090",
+    "result": "成功",
+    "createdAt": "2026-06-09 17:30"
+  },
+  {
+    "id": "AUD-0091",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "knowledge",
+    "targetId": "TGT-0091",
+    "result": "成功",
+    "createdAt": "2026-06-10 08:30"
+  },
+  {
+    "id": "AUD-0092",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "quality",
+    "targetId": "TGT-0092",
+    "result": "失败",
+    "createdAt": "2026-06-11 09:30"
+  },
+  {
+    "id": "AUD-0093",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "process",
+    "targetId": "TGT-0093",
+    "result": "成功",
+    "createdAt": "2026-06-12 10:30"
+  },
+  {
+    "id": "AUD-0094",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0094",
+    "result": "成功",
+    "createdAt": "2026-06-13 11:30"
+  },
+  {
+    "id": "AUD-0095",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "api",
+    "targetId": "TGT-0095",
+    "result": "成功",
+    "createdAt": "2026-06-14 12:30"
+  },
+  {
+    "id": "AUD-0096",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "knowledge",
+    "targetId": "TGT-0096",
+    "result": "成功",
+    "createdAt": "2026-06-15 13:30"
+  },
+  {
+    "id": "AUD-0097",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "quality",
+    "targetId": "TGT-0097",
+    "result": "成功",
+    "createdAt": "2026-06-16 14:30"
+  },
+  {
+    "id": "AUD-0098",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "process",
+    "targetId": "TGT-0098",
+    "result": "成功",
+    "createdAt": "2026-06-17 15:30"
+  },
+  {
+    "id": "AUD-0099",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "recommendation",
+    "targetId": "TGT-0099",
+    "result": "成功",
+    "createdAt": "2026-06-18 16:30"
+  },
+  {
+    "id": "AUD-0100",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "api",
+    "targetId": "TGT-0100",
+    "result": "成功",
+    "createdAt": "2026-06-19 17:30"
+  },
+  {
+    "id": "AUD-0101",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "knowledge",
+    "targetId": "TGT-0101",
+    "result": "成功",
+    "createdAt": "2026-06-20 08:30"
+  },
+  {
+    "id": "AUD-0102",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "quality",
+    "targetId": "TGT-0102",
+    "result": "成功",
+    "createdAt": "2026-06-21 09:30"
+  },
+  {
+    "id": "AUD-0103",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "process",
+    "targetId": "TGT-0103",
+    "result": "成功",
+    "createdAt": "2026-06-22 10:30"
+  },
+  {
+    "id": "AUD-0104",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0104",
+    "result": "成功",
+    "createdAt": "2026-06-23 11:30"
+  },
+  {
+    "id": "AUD-0105",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "api",
+    "targetId": "TGT-0105",
+    "result": "失败",
+    "createdAt": "2026-06-24 12:30"
+  },
+  {
+    "id": "AUD-0106",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0106",
+    "result": "成功",
+    "createdAt": "2026-06-25 13:30"
+  },
+  {
+    "id": "AUD-0107",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "quality",
+    "targetId": "TGT-0107",
+    "result": "成功",
+    "createdAt": "2026-06-26 14:30"
+  },
+  {
+    "id": "AUD-0108",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "process",
+    "targetId": "TGT-0108",
+    "result": "成功",
+    "createdAt": "2026-06-27 15:30"
+  },
+  {
+    "id": "AUD-0109",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "recommendation",
+    "targetId": "TGT-0109",
+    "result": "成功",
+    "createdAt": "2026-06-01 16:30"
+  },
+  {
+    "id": "AUD-0110",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "api",
+    "targetId": "TGT-0110",
+    "result": "成功",
+    "createdAt": "2026-06-02 17:30"
+  },
+  {
+    "id": "AUD-0111",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "knowledge",
+    "targetId": "TGT-0111",
+    "result": "成功",
+    "createdAt": "2026-06-03 08:30"
+  },
+  {
+    "id": "AUD-0112",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "quality",
+    "targetId": "TGT-0112",
+    "result": "成功",
+    "createdAt": "2026-06-04 09:30"
+  },
+  {
+    "id": "AUD-0113",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "process",
+    "targetId": "TGT-0113",
+    "result": "成功",
+    "createdAt": "2026-06-05 10:30"
+  },
+  {
+    "id": "AUD-0114",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "recommendation",
+    "targetId": "TGT-0114",
+    "result": "成功",
+    "createdAt": "2026-06-06 11:30"
+  },
+  {
+    "id": "AUD-0115",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "api",
+    "targetId": "TGT-0115",
+    "result": "成功",
+    "createdAt": "2026-06-07 12:30"
+  },
+  {
+    "id": "AUD-0116",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0116",
+    "result": "成功",
+    "createdAt": "2026-06-08 13:30"
+  },
+  {
+    "id": "AUD-0117",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "quality",
+    "targetId": "TGT-0117",
+    "result": "成功",
+    "createdAt": "2026-06-09 14:30"
+  },
+  {
+    "id": "AUD-0118",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "process",
+    "targetId": "TGT-0118",
+    "result": "失败",
+    "createdAt": "2026-06-10 15:30"
+  },
+  {
+    "id": "AUD-0119",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "recommendation",
+    "targetId": "TGT-0119",
+    "result": "成功",
+    "createdAt": "2026-06-11 16:30"
+  },
+  {
+    "id": "AUD-0120",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "api",
+    "targetId": "TGT-0120",
+    "result": "成功",
+    "createdAt": "2026-06-12 17:30"
+  },
+  {
+    "id": "AUD-0121",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "knowledge",
+    "targetId": "TGT-0121",
+    "result": "成功",
+    "createdAt": "2026-06-13 08:30"
+  },
+  {
+    "id": "AUD-0122",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "quality",
+    "targetId": "TGT-0122",
+    "result": "成功",
+    "createdAt": "2026-06-14 09:30"
+  },
+  {
+    "id": "AUD-0123",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "process",
+    "targetId": "TGT-0123",
+    "result": "成功",
+    "createdAt": "2026-06-15 10:30"
+  },
+  {
+    "id": "AUD-0124",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0124",
+    "result": "成功",
+    "createdAt": "2026-06-16 11:30"
+  },
+  {
+    "id": "AUD-0125",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "api",
+    "targetId": "TGT-0125",
+    "result": "成功",
+    "createdAt": "2026-06-17 12:30"
+  },
+  {
+    "id": "AUD-0126",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "knowledge",
+    "targetId": "TGT-0126",
+    "result": "成功",
+    "createdAt": "2026-06-18 13:30"
+  },
+  {
+    "id": "AUD-0127",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "quality",
+    "targetId": "TGT-0127",
+    "result": "成功",
+    "createdAt": "2026-06-19 14:30"
+  },
+  {
+    "id": "AUD-0128",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "process",
+    "targetId": "TGT-0128",
+    "result": "成功",
+    "createdAt": "2026-06-20 15:30"
+  },
+  {
+    "id": "AUD-0129",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "recommendation",
+    "targetId": "TGT-0129",
+    "result": "成功",
+    "createdAt": "2026-06-21 16:30"
+  },
+  {
+    "id": "AUD-0130",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "api",
+    "targetId": "TGT-0130",
+    "result": "成功",
+    "createdAt": "2026-06-22 17:30"
+  },
+  {
+    "id": "AUD-0131",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "knowledge",
+    "targetId": "TGT-0131",
+    "result": "失败",
+    "createdAt": "2026-06-23 08:30"
+  },
+  {
+    "id": "AUD-0132",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "quality",
+    "targetId": "TGT-0132",
+    "result": "成功",
+    "createdAt": "2026-06-24 09:30"
+  },
+  {
+    "id": "AUD-0133",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "process",
+    "targetId": "TGT-0133",
+    "result": "成功",
+    "createdAt": "2026-06-25 10:30"
+  },
+  {
+    "id": "AUD-0134",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0134",
+    "result": "成功",
+    "createdAt": "2026-06-26 11:30"
+  },
+  {
+    "id": "AUD-0135",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "api",
+    "targetId": "TGT-0135",
+    "result": "成功",
+    "createdAt": "2026-06-27 12:30"
+  },
+  {
+    "id": "AUD-0136",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0136",
+    "result": "成功",
+    "createdAt": "2026-06-01 13:30"
+  },
+  {
+    "id": "AUD-0137",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "quality",
+    "targetId": "TGT-0137",
+    "result": "成功",
+    "createdAt": "2026-06-02 14:30"
+  },
+  {
+    "id": "AUD-0138",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "process",
+    "targetId": "TGT-0138",
+    "result": "成功",
+    "createdAt": "2026-06-03 15:30"
+  },
+  {
+    "id": "AUD-0139",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "recommendation",
+    "targetId": "TGT-0139",
+    "result": "成功",
+    "createdAt": "2026-06-04 16:30"
+  },
+  {
+    "id": "AUD-0140",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "api",
+    "targetId": "TGT-0140",
+    "result": "成功",
+    "createdAt": "2026-06-05 17:30"
+  },
+  {
+    "id": "AUD-0141",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "knowledge",
+    "targetId": "TGT-0141",
+    "result": "成功",
+    "createdAt": "2026-06-06 08:30"
+  },
+  {
+    "id": "AUD-0142",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "quality",
+    "targetId": "TGT-0142",
+    "result": "成功",
+    "createdAt": "2026-06-07 09:30"
+  },
+  {
+    "id": "AUD-0143",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "process",
+    "targetId": "TGT-0143",
+    "result": "成功",
+    "createdAt": "2026-06-08 10:30"
+  },
+  {
+    "id": "AUD-0144",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "recommendation",
+    "targetId": "TGT-0144",
+    "result": "失败",
+    "createdAt": "2026-06-09 11:30"
+  },
+  {
+    "id": "AUD-0145",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "api",
+    "targetId": "TGT-0145",
+    "result": "成功",
+    "createdAt": "2026-06-10 12:30"
+  },
+  {
+    "id": "AUD-0146",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0146",
+    "result": "成功",
+    "createdAt": "2026-06-11 13:30"
+  },
+  {
+    "id": "AUD-0147",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "quality",
+    "targetId": "TGT-0147",
+    "result": "成功",
+    "createdAt": "2026-06-12 14:30"
+  },
+  {
+    "id": "AUD-0148",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "process",
+    "targetId": "TGT-0148",
+    "result": "成功",
+    "createdAt": "2026-06-13 15:30"
+  },
+  {
+    "id": "AUD-0149",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "recommendation",
+    "targetId": "TGT-0149",
+    "result": "成功",
+    "createdAt": "2026-06-14 16:30"
+  },
+  {
+    "id": "AUD-0150",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "api",
+    "targetId": "TGT-0150",
+    "result": "成功",
+    "createdAt": "2026-06-15 17:30"
+  },
+  {
+    "id": "AUD-0151",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "knowledge",
+    "targetId": "TGT-0151",
+    "result": "成功",
+    "createdAt": "2026-06-16 08:30"
+  },
+  {
+    "id": "AUD-0152",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "quality",
+    "targetId": "TGT-0152",
+    "result": "成功",
+    "createdAt": "2026-06-17 09:30"
+  },
+  {
+    "id": "AUD-0153",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "process",
+    "targetId": "TGT-0153",
+    "result": "成功",
+    "createdAt": "2026-06-18 10:30"
+  },
+  {
+    "id": "AUD-0154",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0154",
+    "result": "成功",
+    "createdAt": "2026-06-19 11:30"
+  },
+  {
+    "id": "AUD-0155",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "api",
+    "targetId": "TGT-0155",
+    "result": "成功",
+    "createdAt": "2026-06-20 12:30"
+  },
+  {
+    "id": "AUD-0156",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "knowledge",
+    "targetId": "TGT-0156",
+    "result": "成功",
+    "createdAt": "2026-06-21 13:30"
+  },
+  {
+    "id": "AUD-0157",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "quality",
+    "targetId": "TGT-0157",
+    "result": "失败",
+    "createdAt": "2026-06-22 14:30"
+  },
+  {
+    "id": "AUD-0158",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "process",
+    "targetId": "TGT-0158",
+    "result": "成功",
+    "createdAt": "2026-06-23 15:30"
+  },
+  {
+    "id": "AUD-0159",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "recommendation",
+    "targetId": "TGT-0159",
+    "result": "成功",
+    "createdAt": "2026-06-24 16:30"
+  },
+  {
+    "id": "AUD-0160",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "api",
+    "targetId": "TGT-0160",
+    "result": "成功",
+    "createdAt": "2026-06-25 17:30"
+  },
+  {
+    "id": "AUD-0161",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "knowledge",
+    "targetId": "TGT-0161",
+    "result": "成功",
+    "createdAt": "2026-06-26 08:30"
+  },
+  {
+    "id": "AUD-0162",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "quality",
+    "targetId": "TGT-0162",
+    "result": "成功",
+    "createdAt": "2026-06-27 09:30"
+  },
+  {
+    "id": "AUD-0163",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "process",
+    "targetId": "TGT-0163",
+    "result": "成功",
+    "createdAt": "2026-06-01 10:30"
+  },
+  {
+    "id": "AUD-0164",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "recommendation",
+    "targetId": "TGT-0164",
+    "result": "成功",
+    "createdAt": "2026-06-02 11:30"
+  },
+  {
+    "id": "AUD-0165",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "api",
+    "targetId": "TGT-0165",
+    "result": "成功",
+    "createdAt": "2026-06-03 12:30"
+  },
+  {
+    "id": "AUD-0166",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0166",
+    "result": "成功",
+    "createdAt": "2026-06-04 13:30"
+  },
+  {
+    "id": "AUD-0167",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "quality",
+    "targetId": "TGT-0167",
+    "result": "成功",
+    "createdAt": "2026-06-05 14:30"
+  },
+  {
+    "id": "AUD-0168",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "process",
+    "targetId": "TGT-0168",
+    "result": "成功",
+    "createdAt": "2026-06-06 15:30"
+  },
+  {
+    "id": "AUD-0169",
+    "user": "系统管理员",
+    "action": "登录",
+    "targetType": "recommendation",
+    "targetId": "TGT-0169",
+    "result": "成功",
+    "createdAt": "2026-06-07 16:30"
+  },
+  {
+    "id": "AUD-0170",
+    "user": "工艺管理员",
+    "action": "查询知识",
+    "targetType": "api",
+    "targetId": "TGT-0170",
+    "result": "失败",
+    "createdAt": "2026-06-08 17:30"
+  },
+  {
+    "id": "AUD-0171",
+    "user": "普通查询用户",
+    "action": "导入数据",
+    "targetType": "knowledge",
+    "targetId": "TGT-0171",
+    "result": "成功",
+    "createdAt": "2026-06-09 08:30"
+  },
+  {
+    "id": "AUD-0172",
+    "user": "接口调用方",
+    "action": "编辑知识",
+    "targetType": "quality",
+    "targetId": "TGT-0172",
+    "result": "成功",
+    "createdAt": "2026-06-10 09:30"
+  },
+  {
+    "id": "AUD-0173",
+    "user": "系统管理员",
+    "action": "创建推荐",
+    "targetType": "process",
+    "targetId": "TGT-0173",
+    "result": "成功",
+    "createdAt": "2026-06-11 10:30"
+  },
+  {
+    "id": "AUD-0174",
+    "user": "工艺管理员",
+    "action": "查看接口",
+    "targetType": "recommendation",
+    "targetId": "TGT-0174",
+    "result": "成功",
+    "createdAt": "2026-06-12 11:30"
+  },
+  {
+    "id": "AUD-0175",
+    "user": "普通查询用户",
+    "action": "登录",
+    "targetType": "api",
+    "targetId": "TGT-0175",
+    "result": "成功",
+    "createdAt": "2026-06-13 12:30"
+  },
+  {
+    "id": "AUD-0176",
+    "user": "接口调用方",
+    "action": "查询知识",
+    "targetType": "knowledge",
+    "targetId": "TGT-0176",
+    "result": "成功",
+    "createdAt": "2026-06-14 13:30"
+  },
+  {
+    "id": "AUD-0177",
+    "user": "系统管理员",
+    "action": "导入数据",
+    "targetType": "quality",
+    "targetId": "TGT-0177",
+    "result": "成功",
+    "createdAt": "2026-06-15 14:30"
+  },
+  {
+    "id": "AUD-0178",
+    "user": "工艺管理员",
+    "action": "编辑知识",
+    "targetType": "process",
+    "targetId": "TGT-0178",
+    "result": "成功",
+    "createdAt": "2026-06-16 15:30"
+  },
+  {
+    "id": "AUD-0179",
+    "user": "普通查询用户",
+    "action": "创建推荐",
+    "targetType": "recommendation",
+    "targetId": "TGT-0179",
+    "result": "成功",
+    "createdAt": "2026-06-17 16:30"
+  },
+  {
+    "id": "AUD-0180",
+    "user": "接口调用方",
+    "action": "查看接口",
+    "targetType": "api",
+    "targetId": "TGT-0180",
+    "result": "成功",
+    "createdAt": "2026-06-18 17:30"
+  }
+]
