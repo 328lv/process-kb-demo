@@ -131,7 +131,7 @@ export default function AuditOps({ data, currentUser }: PageProps) {
         <Card title="正式化建设路线">
           <Timeline
             items={[
-              { color: "green", children: "演示版：前端路由、角色菜单、JSON 数据和本地持久化" },
+              { color: "green", children: "当前阶段：前端路由、角色菜单、JSON 数据和本地持久化" },
               { color: "blue", children: "试运行版：后端 API、数据库、导入任务、统一日志" },
               { color: "orange", children: "内网版：统一身份认证、权限审批、接口网关、备份策略" },
               { color: "gray", children: "运维版：监控告警、容灾恢复、数据质量巡检和审计报表" }

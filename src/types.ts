@@ -114,6 +114,24 @@ export interface RecommendationRule {
   basis: string;
 }
 
+export interface ModelCase {
+  id: string;
+  name: string;
+  fileName: string;
+  previewImage: string;
+  partType: string;
+  material: string;
+  module: number;
+  teeth: number;
+  width: number;
+  accuracy: string;
+  heatTreatment: string;
+  structureFeatures: string[];
+  confidence: number;
+  missingFields: string[];
+  summary: string;
+}
+
 export interface OptimizationRecord {
   id: string;
   partNo: string;
@@ -145,4 +163,5 @@ export interface AppData {
   recommendationRules: RecommendationRule[];
   optimizationRecords: OptimizationRecord[];
   auditLogs: AuditLog[];
+  modelCases: ModelCase[];
 }

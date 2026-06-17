@@ -1,4 +1,4 @@
-import { Alert, Button, Card, Col, Progress, Row, Space, Statistic, Table, Tag, Typography } from "antd";
+import { Alert, Button, Card, Col, Input, Progress, Row, Space, Statistic, Table, Tag, Typography } from "antd";
 import ReactECharts from "echarts-for-react";
 import { useNavigate } from "react-router-dom";
 import type { PageProps } from "../App";
@@ -17,12 +17,48 @@ export default function Dashboard({ data }: PageProps) {
   const issueTop = Object.entries(issueCount)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 6);
+  const quickEntries = [
+    { title: "模型解析", desc: "从模型特征生成工艺建议", path: "/model-generator" },
+    { title: "工艺推荐", desc: "按零件条件生成参数方案", path: "/recommend" },
+    { title: "质量知识", desc: "查看异常处置和追溯记录", path: "/quality" },
+    { title: "知识维护", desc: "沉淀经验和参数规则", path: "/knowledge" }
+  ];
 
   return (
     <>
       <div className="page-title">
         <h2>综合看板</h2>
-        <p>集中展示数据建设进度、知识覆盖、质量异常、设备工况和推荐优化效果。</p>
+        <p>面向工艺知识检索、模型解析、方案生成、质量风险和设备状态的统一工作入口。</p>
+      </div>
+      <div className="knowledge-portal">
+        <section className="knowledge-search-panel">
+          <Typography.Title level={4} style={{ marginTop: 0 }}>知识检索与工艺应用</Typography.Title>
+          <Typography.Paragraph type="secondary">
+            输入零件号、材料、质量问题、工艺关键词或模型特征，快速定位知识、案例和推荐任务。
+          </Typography.Paragraph>
+          <Input.Search size="large" placeholder="搜索工艺知识、质量问题、设备或零件" />
+          <div className="quick-category-grid">
+            {quickEntries.map((entry) => (
+              <button className="quick-category" key={entry.path} onClick={() => navigate(entry.path)}>
+                <strong>{entry.title}</strong>
+                <span>{entry.desc}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+        <Card title="近期知识更新">
+          <Table
+            rowKey="id"
+            size="small"
+            pagination={false}
+            dataSource={data.knowledge.slice(0, 5)}
+            columns={[
+              { title: "标题", dataIndex: "title", ellipsis: true },
+              { title: "分类", dataIndex: "category", width: 110 },
+              { title: "风险", dataIndex: "riskLevel", width: 70, render: (v) => <Tag color={v === "高" ? "red" : "blue"}>{v}</Tag> }
+            ]}
+          />
+        </Card>
       </div>
       <div className="metric-grid">
         <Card><Statistic title="结构化数据总量" value={total} suffix="条" /></Card>
@@ -34,14 +70,14 @@ export default function Dashboard({ data }: PageProps) {
       <Row gutter={[16, 16]}>
         <Col xs={24} lg={14}>
           <Card
-            title="生产决策入口"
-            extra={<Button type="primary" onClick={() => navigate("/recommend")}>进入方案推荐工作台</Button>}
+            title="工艺应用入口"
+            extra={<Space><Button onClick={() => navigate("/model-generator")}>模型解析</Button><Button type="primary" onClick={() => navigate("/recommend")}>方案推荐</Button></Space>}
           >
             <Alert
               type="info"
               showIcon
-              message="推荐主线"
-              description="选择待加工零件或输入材料、模数、齿数、齿宽等条件，系统将联动工艺路线、相似案例、质量风险、设备工况和知识条目，形成可解释的加工建议。"
+              message="知识驱动流程"
+              description="通过模型特征、零件条件或质量问题触发知识匹配，联动工艺路线、相似案例、质量风险、设备工况和参数规则，形成可复核的加工建议。"
               style={{ marginBottom: 16 }}
             />
             <Space direction="vertical" style={{ width: "100%" }}>

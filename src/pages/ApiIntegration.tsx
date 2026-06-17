@@ -44,7 +44,7 @@ export default function ApiIntegration({ data, currentUser }: PageProps) {
         type="info"
         showIcon
         style={{ marginBottom: 16 }}
-        message="当前版本为 GitHub Pages 前端演示，接口为模拟设计，不连接真实后端。"
+        message="当前页面用于表达接口边界和对接对象，正式联调由后端服务统一承接。"
       />
 
       <div className="metric-grid">
@@ -112,7 +112,7 @@ export default function ApiIntegration({ data, currentUser }: PageProps) {
             </Descriptions>
             <Timeline
               items={[
-                { color: "green", children: "第一阶段：前端演示和数据口径确认" },
+                { color: "green", children: "第一阶段：前端工作台和数据口径确认" },
                 { color: "blue", children: "第二阶段：后端 API、达梦 DM8、权限模型落地" },
                 { color: "orange", children: "第三阶段：MES、质量系统、设备采集联调" },
                 { color: "gray", children: "第四阶段：审计、备份、容灾和运维监控" }

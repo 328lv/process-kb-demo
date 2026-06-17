@@ -17,6 +17,7 @@ import type { MenuProps } from "antd";
 import { HashRouter, Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import Dashboard from "./pages/Dashboard";
+import ModelProcessGenerator from "./pages/ModelProcessGenerator";
 import RecommendationWorkbench from "./pages/RecommendationWorkbench";
 import BasicData from "./pages/BasicData";
 import ProcessManagement from "./pages/ProcessManagement";
@@ -41,9 +42,9 @@ type PageProps = {
 export type { PageProps };
 
 const roleMenus: Record<RoleKey, string[]> = {
-  admin: ["dashboard", "recommend", "basic", "process", "knowledge", "equipment", "quality", "import", "api", "audit"],
-  process: ["dashboard", "recommend", "basic", "process", "knowledge", "equipment", "quality", "import", "audit"],
-  viewer: ["dashboard", "recommend", "process", "knowledge", "equipment", "quality"],
+  admin: ["dashboard", "model", "recommend", "basic", "process", "knowledge", "equipment", "quality", "import", "api", "audit"],
+  process: ["dashboard", "model", "recommend", "basic", "process", "knowledge", "equipment", "quality", "import", "audit"],
+  viewer: ["dashboard", "model", "recommend", "process", "knowledge", "equipment", "quality"],
   api: ["dashboard", "api", "audit"]
 };
 
@@ -56,6 +57,7 @@ const roleNameFallbacks: Record<RoleKey, string> = {
 
 const allMenuItems = [
   { key: "dashboard", path: "/dashboard", label: "综合看板", icon: <BarChartOutlined /> },
+  { key: "model", path: "/model-generator", label: "模型解析与工艺生成", icon: <FileSearchOutlined /> },
   { key: "recommend", path: "/recommend", label: "方案推荐工作台", icon: <ExperimentOutlined /> },
   { key: "basic", path: "/basic", label: "基础数据", icon: <DatabaseOutlined /> },
   { key: "process", path: "/process", label: "工艺流程", icon: <PartitionOutlined /> },
@@ -89,7 +91,7 @@ function LoginPage({
       (entry) => entry.username === values.username && entry.password === values.password && entry.role === values.role
     );
     if (!user) {
-      messageApi.error("账号、密码或角色不匹配，请使用演示账号。");
+      messageApi.error("账号、密码或角色不匹配，请检查登录信息。");
       return;
     }
     onLogin(user);
@@ -97,19 +99,22 @@ function LoginPage({
 
   return (
     <div className="login-page">
-      <section className="login-hero">
+      <section className="login-visual-panel">
         <div>
-          <Typography.Title level={1}>滚齿加工生产决策助手</Typography.Title>
+          <Typography.Title level={1}>工艺知识库系统</Typography.Title>
           <p>
-            面向变速箱机加车间滚齿加工单元，整合工艺路线、知识经验、设备工况、质量追溯和参数规则，
-            形成可解释的加工方案推荐与知识复用平台。
+            面向制造工艺知识沉淀、工艺推荐、质量追溯与模型解析，构建统一的知识检索和方案生成工作入口。
           </p>
         </div>
+        <div className="login-search-hero">
+          <Input.Search size="large" placeholder="搜索工艺、模型、质量问题或知识条目" readOnly />
+        </div>
+        <img className="login-gear-image" src={`${import.meta.env.BASE_URL}assets/gear-model-preview.png`} alt="齿轮模型" />
         <div className="login-badges">
-          <div className="login-badge"><strong>5000+</strong><span>结构化演示数据</span></div>
-          <div className="login-badge"><strong>10</strong><span>业务与治理模块</span></div>
-          <div className="login-badge"><strong>4类</strong><span>角色权限模拟</span></div>
-          <div className="login-badge"><strong>Pages</strong><span>GitHub 自动部署</span></div>
+          <div className="login-badge"><strong>5000+</strong><span>结构化知识数据</span></div>
+          <div className="login-badge"><strong>模型</strong><span>解析与方案生成</span></div>
+          <div className="login-badge"><strong>质量</strong><span>追溯与风险提示</span></div>
+          <div className="login-badge"><strong>权限</strong><span>角色化工作入口</span></div>
         </div>
       </section>
       <section className="login-card-wrap">
@@ -117,8 +122,8 @@ function LoginPage({
           <Space align="center" style={{ marginBottom: 20 }}>
             <span className="brand-mark">齿</span>
             <div>
-              <Typography.Title level={3} style={{ margin: 0 }}>滚齿工艺知识库系统</Typography.Title>
-              <Typography.Text type="secondary">React/Vite 可部署演示版</Typography.Text>
+              <Typography.Title level={3} style={{ margin: 0 }}>工艺知识库系统</Typography.Title>
+              <Typography.Text type="secondary">知识沉淀 · 工艺推荐 · 质量追溯</Typography.Text>
             </div>
           </Space>
           <Form form={form} layout="vertical" onFinish={submit}>
@@ -138,7 +143,7 @@ function LoginPage({
             <Button type="primary" htmlType="submit" block size="large">进入系统</Button>
           </Form>
           <Typography.Paragraph type="secondary" style={{ marginTop: 16 }}>
-            演示账号密码均已自动填入，可切换角色查看菜单和权限差异。
+            可切换角色查看不同工作范围，账号信息由系统管理员维护。
           </Typography.Paragraph>
         </Card>
       </section>
@@ -173,15 +178,14 @@ function Shell({ data, setData, currentUser, messageApi, onLogout }: PageProps &
   const onReset = async () => {
     const fresh = await resetData();
     setData(fresh);
-    messageApi.success("已恢复初始演示数据。");
+    messageApi.success("已恢复初始数据。");
   };
 
   return (
-    <Layout className="site-layout">
+    <Layout className="site-layout knowledge-shell">
       <Sider className="site-sider" width={248}>
-        <div className="site-logo"><span className="brand-mark">齿</span>工艺知识库</div>
+        <div className="site-logo"><span className="brand-mark">知</span>工艺知识库</div>
         <Menu
-          theme="dark"
           mode="inline"
           selectedKeys={[selectedKey]}
           items={menuItems}
@@ -191,7 +195,7 @@ function Shell({ data, setData, currentUser, messageApi, onLogout }: PageProps &
       <Layout>
         <Header className="site-header">
           <Space direction="vertical" size={0}>
-            <Typography.Text strong>滚齿加工生产决策助手</Typography.Text>
+            <Typography.Text strong>工艺知识库系统</Typography.Text>
             <Typography.Text type="secondary">数据规模 {Object.values(data).reduce((sum, list) => sum + list.length, 0)} 条 · 当前角色 {currentUser.roleName}</Typography.Text>
           </Space>
           <Space>
@@ -204,6 +208,7 @@ function Shell({ data, setData, currentUser, messageApi, onLogout }: PageProps &
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<Dashboard {...pageProps} />} />
+            <Route path="/model-generator" element={<ModelProcessGenerator {...pageProps} />} />
             <Route path="/recommend" element={<RecommendationWorkbench {...pageProps} />} />
             <Route path="/basic" element={<BasicData {...pageProps} />} />
             <Route path="/process" element={<ProcessManagement {...pageProps} />} />
@@ -236,7 +241,7 @@ function AppInner() {
   };
 
   if (!data) {
-    return <Spin fullscreen tip="正在加载知识库演示数据..." />;
+    return <Spin fullscreen tip="正在加载知识库数据..." />;
   }
 
   if (!currentUser) {

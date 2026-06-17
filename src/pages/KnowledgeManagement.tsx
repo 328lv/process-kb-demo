@@ -61,7 +61,7 @@ export default function KnowledgeManagement({ data, setData, currentUser, messag
     });
     setData(next);
     setEditing(null);
-    messageApi.success("知识条目已保存到本地演示数据。");
+    messageApi.success("知识条目已保存到本地工作记录。");
   };
 
   return (

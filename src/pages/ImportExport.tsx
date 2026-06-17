@@ -206,7 +206,7 @@ export default function ImportExport({ data, setData, currentUser, messageApi }:
     <>
       <div className="page-title">
         <h2>数据导入导出</h2>
-        <p>模拟知识条目和质量记录的离线导入、字段校验、批次记录与演示数据导出。</p>
+        <p>支持知识条目和质量记录的离线导入、字段校验、批次记录与本地数据导出。</p>
       </div>
 
       <div className="metric-grid">

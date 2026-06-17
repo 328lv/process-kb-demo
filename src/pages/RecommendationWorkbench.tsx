@@ -112,7 +112,7 @@ export default function RecommendationWorkbench({ data, setData, currentUser, me
       }
     );
     setData(next);
-    messageApi.success("推荐方案已记录为采纳，数据保存到本地演示存储。");
+    messageApi.success("推荐方案已记录为采纳，数据保存到本地工作记录。");
   };
 
   return (

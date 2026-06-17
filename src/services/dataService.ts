@@ -12,7 +12,8 @@ const dataFiles: Record<keyof AppData, string> = {
   equipmentConditions: "equipmentConditions.json",
   recommendationRules: "recommendationRules.json",
   optimizationRecords: "optimizationRecords.json",
-  auditLogs: "auditLogs.json"
+  auditLogs: "auditLogs.json",
+  modelCases: "modelCases.json"
 };
 
 async function fetchJson<T>(file: string): Promise<T[]> {
@@ -23,16 +24,32 @@ async function fetchJson<T>(file: string): Promise<T[]> {
   return response.json();
 }
 
-export async function loadInitialData(): Promise<AppData> {
-  const local = window.localStorage.getItem(STORAGE_KEY);
-  if (local) {
-    return JSON.parse(local) as AppData;
-  }
-
+async function loadBundledData(): Promise<AppData> {
   const entries = await Promise.all(
     Object.entries(dataFiles).map(async ([key, file]) => [key, await fetchJson(file)])
   );
-  const data = Object.fromEntries(entries) as AppData;
+  return Object.fromEntries(entries) as AppData;
+}
+
+export async function loadInitialData(): Promise<AppData> {
+  const local = window.localStorage.getItem(STORAGE_KEY);
+  if (local) {
+    try {
+      const parsed = JSON.parse(local) as Partial<AppData>;
+      const missingKeys = Object.keys(dataFiles).filter((key) => !Array.isArray(parsed[key as keyof AppData]));
+      if (!missingKeys.length) {
+        return parsed as AppData;
+      }
+      const bundled = await loadBundledData();
+      const migrated = { ...bundled, ...parsed } as AppData;
+      saveData(migrated);
+      return migrated;
+    } catch {
+      window.localStorage.removeItem(STORAGE_KEY);
+    }
+  }
+
+  const data = await loadBundledData();
   saveData(data);
   return data;
 }

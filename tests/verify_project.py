@@ -16,6 +16,7 @@ class ReactKnowledgeBaseProjectTest(unittest.TestCase):
             "src/main.tsx",
             "src/services/dataService.ts",
             "src/pages/RecommendationWorkbench.tsx",
+            "src/pages/ModelProcessGenerator.tsx",
             ".github/workflows/deploy.yml",
             "README.md",
         ]
@@ -45,6 +46,7 @@ class ReactKnowledgeBaseProjectTest(unittest.TestCase):
             "optimizationRecords.json",
             "auditLogs.json",
             "users.json",
+            "modelCases.json",
         ]
         total = 0
         sizes = {}
@@ -58,11 +60,13 @@ class ReactKnowledgeBaseProjectTest(unittest.TestCase):
         self.assertGreaterEqual(total, 5000)
         self.assertGreaterEqual(sizes["knowledge.json"], 2200)
         self.assertGreaterEqual(sizes["qualityRecords.json"], 1000)
+        self.assertGreaterEqual(sizes["modelCases.json"], 3)
 
     def test_app_contains_planned_modules_and_roles(self):
         app_text = (ROOT / "src" / "App.tsx").read_text(encoding="utf-8")
         expected_modules = [
             "综合看板",
+            "模型解析与工艺生成",
             "方案推荐工作台",
             "基础数据",
             "工艺流程",
@@ -77,6 +81,43 @@ class ReactKnowledgeBaseProjectTest(unittest.TestCase):
             self.assertIn(text, app_text)
         for role in ["系统管理员", "工艺管理员", "普通查询用户", "接口调用方"]:
             self.assertIn(role, app_text)
+
+    def test_formal_ui_wording_and_light_knowledge_layout(self):
+        src_files = list((ROOT / "src").rglob("*.tsx")) + list((ROOT / "src").rglob("*.ts"))
+        combined = "\n".join(path.read_text(encoding="utf-8") for path in src_files)
+        forbidden_public_terms = [
+            "演示版",
+            "可部署演示",
+            "生产决策助手",
+            "React/Vite",
+            "GitHub 自动部署",
+            "演示账号密码",
+            "演示数据",
+            "演示存储",
+        ]
+        for text in forbidden_public_terms:
+            self.assertNotIn(text, combined)
+        self.assertIn("工艺知识库系统", combined)
+        css = (ROOT / "src" / "styles.css").read_text(encoding="utf-8")
+        self.assertIn("knowledge-shell", css)
+        self.assertIn("login-visual-panel", css)
+
+    def test_model_generation_module_has_expected_flow(self):
+        page = (ROOT / "src" / "pages" / "ModelProcessGenerator.tsx").read_text(encoding="utf-8")
+        expected_terms = [
+            "上传模型文件",
+            "使用内置样例",
+            "识别结果",
+            "需人工确认项",
+            "生成工艺方案",
+            "推荐工艺路线",
+            "参数建议",
+            "引用知识",
+            "质量风险",
+            "保存生成方案",
+        ]
+        for text in expected_terms:
+            self.assertIn(text, page)
 
     def test_vite_base_matches_github_pages_repo(self):
         vite_config = (ROOT / "vite.config.ts").read_text(encoding="utf-8")

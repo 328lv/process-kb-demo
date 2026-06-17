@@ -165,8 +165,79 @@ const recommendationRules = Array.from({ length: 220 }, (_, i) => ({
   depthRange: [Number((0.2 + (i % 5) * 0.1).toFixed(2)), Number((0.8 + (i % 8) * 0.2).toFixed(2))],
   coolant: pick(["乳化液充分冷却", "高压冷却", "定向冷却"], i),
   risk: pick(["低", "中", "高"], i),
-  basis: "由相似零件历史工艺、质量复盘和已审核知识条目形成的演示规则。"
+  basis: "由相似零件历史工艺、质量复盘和已审核知识条目形成的推荐规则。"
 }));
+
+const modelCases = [
+  {
+    id: "MODEL-001",
+    name: "中间轴直齿轮模型",
+    fileName: "shaft-gear-m2-36t.step",
+    previewImage: "assets/gear-model-preview.png",
+    partType: "轴类齿轮",
+    material: "20CrMnTi",
+    module: 2,
+    teeth: 36,
+    width: 32,
+    accuracy: "7级",
+    heatTreatment: "渗碳淬火",
+    structureFeatures: ["外齿", "中心孔", "倒角边", "标准齿宽"],
+    confidence: 92,
+    missingFields: ["表面粗糙度", "批量信息"],
+    summary: "模型具备典型轴类齿轮结构，可按中小模数齿轮路线生成初始工艺方案。"
+  },
+  {
+    id: "MODEL-002",
+    name: "从动齿轮模型",
+    fileName: "driven-gear-m3-48t.stp",
+    previewImage: "assets/gear-model-preview.png",
+    partType: "齿轮类零件",
+    material: "42CrMo",
+    module: 3,
+    teeth: 48,
+    width: 42,
+    accuracy: "8级",
+    heatTreatment: "调质",
+    structureFeatures: ["外齿", "轮毂", "中心孔", "双侧倒角"],
+    confidence: 88,
+    missingFields: ["键槽方向", "检测基准"],
+    summary: "模型特征适合匹配中等模数滚齿路线，需要复核键槽与检测基准要求。"
+  },
+  {
+    id: "MODEL-003",
+    name: "小模数伺服齿轮模型",
+    fileName: "servo-gear-m1-28t.step",
+    previewImage: "assets/gear-model-preview.png",
+    partType: "小模数齿轮",
+    material: "40Cr",
+    module: 1,
+    teeth: 28,
+    width: 18,
+    accuracy: "6级",
+    heatTreatment: "调质",
+    structureFeatures: ["小模数", "薄壁", "高精度", "轻量化孔"],
+    confidence: 84,
+    missingFields: ["齿向修形", "最终热处理"],
+    summary: "模型偏高精度小模数零件，推荐时需重点关注夹持变形和齿形稳定性。"
+  },
+  {
+    id: "MODEL-004",
+    name: "大型齿圈模型",
+    fileName: "ring-gear-m5-72t.stp",
+    previewImage: "assets/gear-model-preview.png",
+    partType: "大型齿圈",
+    material: "QT500-7",
+    module: 5,
+    teeth: 72,
+    width: 56,
+    accuracy: "9级",
+    heatTreatment: "正火",
+    structureFeatures: ["大直径", "外齿", "铸件毛坯", "多孔安装面"],
+    confidence: 81,
+    missingFields: ["毛坯余量", "装夹方案", "批量信息"],
+    summary: "模型尺寸较大，推荐路线需优先考虑装夹刚性、毛坯余量和设备行程。"
+  }
+];
 
 const optimizationRecords = Array.from({ length: 220 }, (_, i) => {
   const part = pick(parts, i);
@@ -201,7 +272,8 @@ const files = {
   equipmentConditions,
   recommendationRules,
   optimizationRecords,
-  auditLogs
+  auditLogs,
+  modelCases
 };
 
 await mkdir(outDir, { recursive: true });
