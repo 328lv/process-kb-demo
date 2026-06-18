@@ -4,6 +4,7 @@ import {
   Card,
   Col,
   Descriptions,
+  Empty,
   Form,
   Input,
   InputNumber,
@@ -50,8 +51,47 @@ type GenerationResult = {
   basis: string;
 };
 
+type WorkflowStage = "empty" | "read" | "extracted" | "generated";
+
+type UploadedModel = {
+  fileName: string;
+  fileKind: "model" | "image";
+  source: "upload" | "sample";
+  previewUrl: string;
+  matchedCase: ModelCase | null;
+};
+
+const defaultPreviewImage = "assets/gear-model-preview.png";
+
 function assetUrl(path: string) {
   return `${import.meta.env.BASE_URL}${path}`.replace(/\/{2,}/g, "/").replace("http:/", "http://").replace("https:/", "https://");
+}
+
+function sampleFileForCase(item: ModelCase) {
+  return item.sampleFile || `model-samples/${item.fileName}`;
+}
+
+function normalizeFileName(name: string) {
+  return name.split(/[\\/]/).pop()?.toLowerCase() ?? name.toLowerCase();
+}
+
+function fileStem(name: string) {
+  return normalizeFileName(name).replace(/\.(step|stp|png|jpg|jpeg)$/i, "");
+}
+
+function isImageFile(name: string, type = "") {
+  return type.startsWith("image/") || /\.(png|jpg|jpeg)$/i.test(name);
+}
+
+function findMatchedCase(cases: ModelCase[], fileName: string) {
+  const normalized = normalizeFileName(fileName);
+  const stem = fileStem(fileName);
+  return (
+    cases.find((item) => normalizeFileName(item.fileName) === normalized) ??
+    cases.find((item) => normalizeFileName(sampleFileForCase(item)) === normalized) ??
+    cases.find((item) => fileStem(item.fileName) === stem || fileStem(sampleFileForCase(item)) === stem) ??
+    null
+  );
 }
 
 function valuesFromCase(item: ModelCase): RecognitionValues {
@@ -125,66 +165,123 @@ function buildGeneratedResult(data: PageProps["data"], values: RecognitionValues
 
 export default function ModelProcessGenerator({ data, setData, currentUser, messageApi }: PageProps) {
   const [form] = Form.useForm<RecognitionValues>();
-  const [currentCase, setCurrentCase] = useState<ModelCase>(data.modelCases[0]);
-  const [fileName, setFileName] = useState(currentCase.fileName);
-  const [preview, setPreview] = useState(assetUrl(currentCase.previewImage));
-  const [confidence, setConfidence] = useState(currentCase.confidence);
-  const [missingFields, setMissingFields] = useState(currentCase.missingFields);
+  const [stage, setStage] = useState<WorkflowStage>("empty");
+  const [uploadedModel, setUploadedModel] = useState<UploadedModel | null>(null);
+  const [matchedCase, setMatchedCase] = useState<ModelCase | null>(null);
+  const [confidence, setConfidence] = useState(0);
+  const [missingFields, setMissingFields] = useState<string[]>([]);
   const [result, setResult] = useState<GenerationResult | null>(null);
   const canSave = currentUser.role === "admin" || currentUser.role === "process";
+  const stepCurrent = { empty: 0, read: 1, extracted: 2, generated: 3 }[stage];
 
   const materialOptions = useMemo(() => [...new Set(data.parts.map((part) => part.material))].map((value) => ({ value })), [data.parts]);
-  const typeOptions = useMemo(() => [...new Set(data.parts.map((part) => part.type).concat(data.modelCases.map((item) => item.partType)))].map((value) => ({ value })), [data.modelCases, data.parts]);
+  const typeOptions = useMemo(
+    () => [...new Set(data.parts.map((part) => part.type).concat(data.modelCases.map((item) => item.partType)))].map((value) => ({ value })),
+    [data.modelCases, data.parts]
+  );
+
+  const resetRecognition = () => {
+    setMatchedCase(null);
+    setConfidence(0);
+    setMissingFields([]);
+    setResult(null);
+    form.resetFields();
+  };
 
   const loadCase = (item: ModelCase) => {
-    setCurrentCase(item);
-    setFileName(item.fileName);
-    setPreview(assetUrl(item.previewImage));
-    setConfidence(item.confidence);
-    setMissingFields(item.missingFields);
-    setResult(null);
-    form.setFieldsValue(valuesFromCase(item));
+    resetRecognition();
+    setUploadedModel({
+      fileName: item.fileName,
+      fileKind: "model",
+      source: "sample",
+      previewUrl: assetUrl(item.previewImage || defaultPreviewImage),
+      matchedCase: item
+    });
+    setStage("read");
+    messageApi.success("样例文件已读取，可继续执行特征提取。");
   };
 
   const beforeUpload: UploadProps["beforeUpload"] = (file) => {
-    const selected = data.modelCases.find((item) => item.fileName.toLowerCase().includes(file.name.toLowerCase())) ?? currentCase;
-    setFileName(file.name);
-    setConfidence(Math.max(72, selected.confidence - 8));
-    setMissingFields(["材料牌号", "热处理状态", "精度等级"]);
-    setResult(null);
-    form.setFieldsValue(valuesFromCase(selected));
+    const matched = findMatchedCase(data.modelCases, file.name);
+    const fileKind = isImageFile(file.name, file.type) ? "image" : "model";
+    resetRecognition();
 
-    if (file.type.startsWith("image/")) {
+    const applyUploadedModel = (previewUrl: string) => {
+      setUploadedModel({
+        fileName: file.name,
+        fileKind,
+        source: "upload",
+        previewUrl,
+        matchedCase: matched
+      });
+      setStage("read");
+      if (matched) {
+        messageApi.success("文件读取完成，已匹配到对应模型预览。");
+      } else {
+        messageApi.warning("文件读取完成，未匹配到预置模型，请人工补充识别字段。");
+      }
+    };
+
+    if (fileKind === "image") {
       const reader = new FileReader();
-      reader.onload = () => setPreview(String(reader.result));
+      reader.onload = () => applyUploadedModel(String(reader.result));
       reader.readAsDataURL(file);
     } else {
-      setPreview(assetUrl(selected.previewImage));
+      applyUploadedModel(assetUrl(matched?.previewImage ?? defaultPreviewImage));
     }
-    messageApi.success("文件已读取，识别字段已预填，可继续修正后生成方案。");
     return false;
   };
 
+  const extractFeatures = () => {
+    if (!uploadedModel) {
+      messageApi.warning("请先上传模型文件。");
+      return;
+    }
+    setMatchedCase(uploadedModel.matchedCase);
+    setResult(null);
+    setStage("extracted");
+
+    if (uploadedModel.matchedCase) {
+      setConfidence(uploadedModel.source === "sample" ? uploadedModel.matchedCase.confidence : Math.max(72, uploadedModel.matchedCase.confidence - 6));
+      setMissingFields(uploadedModel.matchedCase.missingFields);
+      form.setFieldsValue(valuesFromCase(uploadedModel.matchedCase));
+      messageApi.success("特征提取完成，请复核识别字段后生成工艺方案。");
+      return;
+    }
+
+    setConfidence(52);
+    setMissingFields(["零件类型", "材料牌号", "模数", "齿数", "齿宽", "精度等级", "热处理状态"]);
+    form.resetFields();
+    messageApi.warning("未匹配到预置模型，请人工补充关键字段。");
+  };
+
   const generate = async () => {
+    if (stage !== "extracted" && stage !== "generated") {
+      messageApi.warning("请先完成特征提取。");
+      return;
+    }
     const values = await form.validateFields();
     const next = buildGeneratedResult(data, values);
     setResult(next);
+    setStage("generated");
     messageApi.success("工艺方案已生成，请复核推荐依据和风险提示。");
   };
 
   const saveGenerated = async () => {
-    const values = await form.validateFields();
-    const nextResult = result ?? buildGeneratedResult(data, values);
-    const anchor = nextResult.similarParts[0];
+    if (!result || !uploadedModel) {
+      messageApi.warning("请先生成工艺方案。");
+      return;
+    }
+    const anchor = result.similarParts[0];
     const next = addAudit(
       {
         ...data,
         optimizationRecords: [
           {
             id: `OPT-MODEL-${Date.now()}`,
-            partNo: anchor?.partNo ?? currentCase.id,
-            baseline: `模型解析：${fileName}`,
-            recommended: `${nextResult.routeName}，${nextResult.rpmRange[0]}-${nextResult.rpmRange[1]} r/min，${nextResult.feedRange[0]}-${nextResult.feedRange[1]} mm/r`,
+            partNo: anchor?.partNo ?? matchedCase?.id ?? uploadedModel.fileName,
+            baseline: `模型解析：${uploadedModel.fileName}`,
+            recommended: `${result.routeName}，${result.rpmRange[0]}-${result.rpmRange[1]} r/min，${result.feedRange[0]}-${result.feedRange[1]} mm/r`,
             adopted: true,
             result: "模型解析方案已进入工艺复核队列",
             createdAt: new Date().toISOString().slice(0, 10)
@@ -196,14 +293,17 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
         user: currentUser.name,
         action: "保存模型生成方案",
         targetType: "model-generation",
-        targetId: fileName,
+        targetId: uploadedModel.fileName,
         result: "成功"
       }
     );
     setData(next);
-    setResult(nextResult);
     messageApi.success("生成方案已保存到本地工作记录。");
   };
+
+  const readDescription = uploadedModel?.matchedCase
+    ? `已匹配预置模型：${uploadedModel.matchedCase.name}，预览图按文件名自动关联。`
+    : "未匹配到预置模型，需要人工补充字段后再生成方案。";
 
   return (
     <>
@@ -217,26 +317,45 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
           <Upload.Dragger beforeUpload={beforeUpload} showUploadList={false} accept=".step,.stp,.png,.jpg,.jpeg">
             <p className="ant-upload-drag-icon"><CloudUploadOutlined /></p>
             <p className="ant-upload-text">选择 STEP / STP / 图片文件</p>
-            <p className="ant-upload-hint">文件只在浏览器本地读取，用于预填识别字段。</p>
+            <p className="ant-upload-hint">上传三维图文件后，系统按文件名匹配对应预览图；图片文件会直接显示本地预览。</p>
           </Upload.Dragger>
-          <Typography.Text className="muted">当前文件：{fileName}</Typography.Text>
+
           <div className="sample-case-list">
-            <Typography.Text strong>使用内置样例</Typography.Text>
+            <Typography.Text strong>加载样例文件</Typography.Text>
             <Space wrap>
-              {data.modelCases.map((item) => (
-                <Button key={item.id} size="small" onClick={() => loadCase(item)} type={item.id === currentCase.id ? "primary" : "default"}>
+              {data.modelCases.slice(0, 2).map((item) => (
+                <Button key={item.id} size="small" onClick={() => loadCase(item)}>
                   {item.name}
                 </Button>
               ))}
             </Space>
+            <Space wrap size={[8, 4]}>
+              {data.modelCases.slice(0, 2).map((item) => (
+                <Typography.Link key={`${item.id}-sample-link`} href={assetUrl(sampleFileForCase(item))} target="_blank">
+                  下载 {item.fileName}
+                </Typography.Link>
+              ))}
+            </Space>
           </div>
-          <img className="model-preview-image" src={preview} alt="齿轮模型预览" />
+
+          {uploadedModel ? (
+            <>
+              <div className="model-file-summary">
+                <Tag color={uploadedModel.fileKind === "model" ? "blue" : "green"}>{uploadedModel.fileKind === "model" ? "三维图文件" : "图片文件"}</Tag>
+                <Typography.Text strong>{uploadedModel.fileName}</Typography.Text>
+                {uploadedModel.matchedCase ? <Typography.Text type="secondary">{uploadedModel.matchedCase.summary}</Typography.Text> : null}
+              </div>
+              <img className="model-preview-image" src={uploadedModel.previewUrl} alt="模型预览" />
+            </>
+          ) : (
+            <Empty className="model-empty-preview" image={Empty.PRESENTED_IMAGE_SIMPLE} description="等待上传模型文件" />
+          )}
         </Card>
 
         <Card title="识别结果">
           <Steps
             size="small"
-            current={2}
+            current={stepCurrent}
             items={[
               { title: "文件读取" },
               { title: "特征提取" },
@@ -244,21 +363,47 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
               { title: "方案生成" }
             ]}
           />
-          <div className="recognition-score">
-            <Progress type="dashboard" percent={confidence} />
-            <div>
-              <Typography.Text strong>识别置信度</Typography.Text>
-              <Typography.Paragraph type="secondary">置信度用于提示复核优先级，不替代工艺人员确认。</Typography.Paragraph>
+
+          {stage === "empty" ? (
+            <Empty className="recognition-empty-state" image={Empty.PRESENTED_IMAGE_SIMPLE} description="等待上传模型文件" />
+          ) : null}
+
+          {stage === "read" ? (
+            <div className="recognition-read-state">
+              <Alert
+                className={uploadedModel?.matchedCase ? undefined : "unmatched-model-file"}
+                type={uploadedModel?.matchedCase ? "success" : "warning"}
+                showIcon
+                message="文件读取完成"
+                description={readDescription}
+              />
+              <Button type="primary" icon={<FileSearchOutlined />} onClick={extractFeatures}>
+                特征提取
+              </Button>
             </div>
-          </div>
-          <Alert
-            type={missingFields.length ? "warning" : "success"}
-            showIcon
-            message="需人工确认项"
-            description={missingFields.length ? missingFields.join("、") : "关键字段已具备生成条件。"}
-            style={{ marginBottom: 16 }}
-          />
-          <Form form={form} layout="vertical" initialValues={valuesFromCase(currentCase)}>
+          ) : null}
+
+          {stage === "extracted" || stage === "generated" ? (
+            <>
+              <div className="recognition-score">
+                <Progress type="dashboard" percent={confidence} />
+                <div>
+                  <Typography.Text strong>识别置信度</Typography.Text>
+                  <Typography.Paragraph type="secondary">置信度用于提示复核优先级，不替代工艺人员确认。</Typography.Paragraph>
+                </div>
+              </div>
+              <Alert
+                className={matchedCase ? undefined : "unmatched-model-file"}
+                type={matchedCase ? (missingFields.length ? "warning" : "success") : "warning"}
+                showIcon
+                message={matchedCase ? "需人工确认项" : "未匹配到预置模型"}
+                description={matchedCase ? (missingFields.length ? missingFields.join("、") : "关键字段已具备生成条件。") : "请根据图纸或工艺人员判断补充下方字段。"}
+                style={{ marginBottom: 16 }}
+              />
+            </>
+          ) : null}
+
+          <Form form={form} layout="vertical" className={stage === "extracted" || stage === "generated" ? undefined : "recognition-form-hidden"}>
             <Row gutter={12}>
               <Col span={12}><Form.Item label="零件类型" name="partType" rules={[{ required: true }]}><Select options={typeOptions} /></Form.Item></Col>
               <Col span={12}><Form.Item label="材料" name="material" rules={[{ required: true }]}><Select options={materialOptions} /></Form.Item></Col>
@@ -270,10 +415,12 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
               <Col span={24}><Form.Item label="结构特征" name="structureFeatures"><Input /></Form.Item></Col>
             </Row>
           </Form>
-          <Space>
-            <Button type="primary" icon={<ThunderboltOutlined />} onClick={generate}>生成工艺方案</Button>
-            <Button icon={<SaveOutlined />} onClick={saveGenerated} disabled={!canSave}>保存生成方案</Button>
-          </Space>
+          {stage === "extracted" || stage === "generated" ? (
+            <Space wrap>
+              <Button type="primary" icon={<ThunderboltOutlined />} onClick={generate}>生成工艺方案</Button>
+              <Button icon={<SaveOutlined />} onClick={saveGenerated} disabled={!canSave || !result}>保存生成方案</Button>
+            </Space>
+          ) : null}
         </Card>
       </div>
 
@@ -292,7 +439,7 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
                 <Descriptions.Item label="推荐依据">{result.basis}</Descriptions.Item>
               </Descriptions>
             ) : (
-              <Typography.Text type="secondary">完成字段复核后点击生成工艺方案。</Typography.Text>
+              <Typography.Text type="secondary">完成特征提取并复核字段后，点击生成工艺方案。</Typography.Text>
             )}
           </Card>
         </Col>
@@ -307,8 +454,8 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
                   pagination={false}
                   dataSource={result?.similarParts ?? []}
                   columns={[
-                    { title: "零件号", dataIndex: "partNo" },
-                    { title: "匹配", dataIndex: "score", render: (value) => `${value}%` }
+                    { key: "partNo", title: "零件号", dataIndex: "partNo" },
+                    { key: "score", title: "匹配", dataIndex: "score", render: (value) => `${value}%` }
                   ]}
                 />
               </section>
@@ -349,7 +496,7 @@ export default function ModelProcessGenerator({ data, setData, currentUser, mess
         showIcon
         icon={<FileSearchOutlined />}
         message="流程说明"
-        description="当前模块体现模型特征识别、知识匹配和工艺推荐的协同流程；最终参数仍需结合图纸技术要求、设备状态和工艺人员复核。"
+        description="当前模块体现三维文件读取、预览图映射、模型特征提取、知识匹配和工艺推荐的协同流程；最终参数仍需结合图纸技术要求、设备状态和工艺人员复核。"
       />
     </>
   );

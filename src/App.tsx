@@ -194,11 +194,13 @@ function Shell({ data, setData, currentUser, messageApi, onLogout }: PageProps &
       </Sider>
       <Layout>
         <Header className="site-header">
-          <Space direction="vertical" size={0}>
-            <Typography.Text strong>工艺知识库系统</Typography.Text>
-            <Typography.Text type="secondary">数据规模 {Object.values(data).reduce((sum, list) => sum + list.length, 0)} 条 · 当前角色 {currentUser.roleName}</Typography.Text>
-          </Space>
-          <Space>
+          <div className="site-header-title">
+            <Typography.Text className="site-header-name" strong>工艺知识库系统</Typography.Text>
+            <Typography.Text className="site-header-meta" type="secondary">
+              数据规模 {Object.values(data).reduce((sum, list) => sum + list.length, 0)} 条 · 当前角色 {currentUser.roleName}
+            </Typography.Text>
+          </div>
+          <Space className="site-header-actions" wrap>
             <Tag color="blue">{currentUser.name}</Tag>
             <Button icon={<SettingOutlined />} onClick={onReset}>重置数据</Button>
             <Button icon={<LogoutOutlined />} onClick={onLogout}>退出登录</Button>

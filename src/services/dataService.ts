@@ -28,7 +28,16 @@ async function loadBundledData(): Promise<AppData> {
   const entries = await Promise.all(
     Object.entries(dataFiles).map(async ([key, file]) => [key, await fetchJson(file)])
   );
-  return Object.fromEntries(entries) as AppData;
+  return ensureModelCaseSampleFiles(Object.fromEntries(entries) as AppData);
+}
+
+function ensureModelCaseSampleFiles(data: AppData): AppData {
+  const modelCases = data.modelCases.map((item) => ({
+    ...item,
+    sampleFile: item.sampleFile || `model-samples/${item.fileName}`
+  }));
+  const changed = modelCases.some((item, index) => item.sampleFile !== data.modelCases[index]?.sampleFile);
+  return changed ? { ...data, modelCases } : data;
 }
 
 export async function loadInitialData(): Promise<AppData> {
@@ -38,10 +47,14 @@ export async function loadInitialData(): Promise<AppData> {
       const parsed = JSON.parse(local) as Partial<AppData>;
       const missingKeys = Object.keys(dataFiles).filter((key) => !Array.isArray(parsed[key as keyof AppData]));
       if (!missingKeys.length) {
-        return parsed as AppData;
+        const migrated = ensureModelCaseSampleFiles(parsed as AppData);
+        if (migrated !== parsed) {
+          saveData(migrated);
+        }
+        return migrated;
       }
       const bundled = await loadBundledData();
-      const migrated = { ...bundled, ...parsed } as AppData;
+      const migrated = ensureModelCaseSampleFiles({ ...bundled, ...parsed } as AppData);
       saveData(migrated);
       return migrated;
     } catch {

@@ -106,7 +106,10 @@ class ReactKnowledgeBaseProjectTest(unittest.TestCase):
         page = (ROOT / "src" / "pages" / "ModelProcessGenerator.tsx").read_text(encoding="utf-8")
         expected_terms = [
             "上传模型文件",
-            "使用内置样例",
+            "等待上传模型文件",
+            "加载样例文件",
+            "文件读取完成",
+            "特征提取",
             "识别结果",
             "需人工确认项",
             "生成工艺方案",
@@ -118,6 +121,28 @@ class ReactKnowledgeBaseProjectTest(unittest.TestCase):
         ]
         for text in expected_terms:
             self.assertIn(text, page)
+        self.assertNotIn('useState<ModelCase>(data.modelCases[0])', page)
+        self.assertIn("matchedCase", page)
+        self.assertIn("unmatched-model-file", page)
+
+    def test_model_cases_include_uploadable_sample_files(self):
+        cases = json.loads((ROOT / "public" / "data" / "modelCases.json").read_text(encoding="utf-8"))
+        for item in cases[:3]:
+            self.assertIn("sampleFile", item)
+            sample = ROOT / "public" / item["sampleFile"]
+            preview = ROOT / "public" / item["previewImage"]
+            self.assertTrue(sample.exists(), item["sampleFile"])
+            self.assertTrue(preview.exists(), item["previewImage"])
+            self.assertIn(Path(item["sampleFile"]).name.lower(), item["fileName"].lower())
+
+    def test_header_layout_has_responsive_title_and_action_regions(self):
+        app = (ROOT / "src" / "App.tsx").read_text(encoding="utf-8")
+        css = (ROOT / "src" / "styles.css").read_text(encoding="utf-8")
+        for class_name in ["site-header-title", "site-header-actions"]:
+            self.assertIn(class_name, app)
+            self.assertIn(f".{class_name}", css)
+        self.assertIn("min-width: 0", css)
+        self.assertIn("flex-wrap: wrap", css)
 
     def test_vite_base_matches_github_pages_repo(self):
         vite_config = (ROOT / "vite.config.ts").read_text(encoding="utf-8")

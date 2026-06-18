@@ -1,0 +1,14 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('Process KB sample gear model placeholder'),'2;1');
+FILE_NAME('shaft-gear-m2-36t.step','2026-06-18T00:00:00',('process-kb'),('process-kb'),'','','');
+FILE_SCHEMA(('AP214'));
+ENDSEC;
+DATA;
+#1=PRODUCT('SHAFT-GEAR-M2-36T','SAMPLE SHAFT GEAR','UPLOAD FLOW PLACEHOLDER',());
+#2=PRODUCT_DEFINITION_FORMATION('A','SAMPLE MODEL FILE',#1);
+#3=PRODUCT_DEFINITION('design','sample upload file for process knowledge base',#2,#4);
+#4=PRODUCT_DEFINITION_CONTEXT('part definition',#5,'design');
+#5=APPLICATION_CONTEXT('configuration controlled 3d design');
+ENDSEC;
+END-ISO-10303-21;

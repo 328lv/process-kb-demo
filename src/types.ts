@@ -118,6 +118,7 @@ export interface ModelCase {
   id: string;
   name: string;
   fileName: string;
+  sampleFile: string;
   previewImage: string;
   partType: string;
   material: string;
